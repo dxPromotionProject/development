@@ -1,0 +1,254 @@
+# Translation of Themes - Radcliffe in Japanese
+# This file is distributed under the same license as the Themes - Radcliffe package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-06-01 01:01:11+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: ja_JP\n"
+"Project-Id-Version: Themes - Radcliffe\n"
+
+#. Theme Name of the theme
+msgid "Radcliffe"
+msgstr "Radcliffe"
+
+#: content.php:26 content.php:28 singular.php:48
+msgid "% comments"
+msgstr "%件のコメント"
+
+#: content.php:26 content.php:28 singular.php:48
+msgid "1 comment"
+msgstr "1件のコメント"
+
+#: content.php:26 content.php:28 singular.php:48
+msgid "0 comments"
+msgstr "0件のコメント"
+
+#: functions.php:241
+msgid "Page %1$s of %2$s"
+msgstr "%1$sページ目 (%2$sページ中)"
+
+#: functions.php:455
+msgctxt "Short name of the larger font size in the Gutenberg editor."
+msgid "XL"
+msgstr "XL"
+
+#: functions.php:454
+msgctxt "Name of the larger font size in Gutenberg"
+msgid "Larger"
+msgstr "特大"
+
+#: functions.php:449
+msgctxt "Short name of the large font size in the Gutenberg editor."
+msgid "L"
+msgstr "L"
+
+#: functions.php:448
+msgctxt "Name of the large font size in Gutenberg"
+msgid "Large"
+msgstr "大"
+
+#: functions.php:443
+msgctxt "Short name of the regular font size in the Gutenberg editor."
+msgid "M"
+msgstr "M"
+
+#: functions.php:442
+msgctxt "Name of the regular font size in Gutenberg"
+msgid "Regular"
+msgstr "通常"
+
+#: functions.php:437
+msgctxt "Short name of the small font size in the Gutenberg editor."
+msgid "S"
+msgstr "S"
+
+#: functions.php:436
+msgctxt "Name of the small font size in Gutenberg"
+msgid "Small"
+msgstr "小"
+
+#: functions.php:426
+msgctxt "Name of the white color in the Gutenberg palette"
+msgid "White"
+msgstr "白"
+
+#: functions.php:421
+msgctxt "Name of the light gray color in the Gutenberg palette"
+msgid "Light Gray"
+msgstr "ライトグレー"
+
+#: functions.php:416
+msgctxt "Name of the medium gray color in the Gutenberg palette"
+msgid "Medium Gray"
+msgstr "ミディアムグレー"
+
+#: functions.php:411
+msgctxt "Name of the dark gray color in the Gutenberg palette"
+msgid "Dark Gray"
+msgstr "ダークグレー"
+
+#: functions.php:406
+msgctxt "Name of the black color in the Gutenberg palette"
+msgid "Black"
+msgstr "黒"
+
+#: functions.php:401
+msgctxt "Name of the accent color in the Gutenberg palette"
+msgid "Accent"
+msgstr "アクセント"
+
+#: functions.php:82 functions.php:111 functions.php:480
+msgctxt "Google Fonts: on or off"
+msgid "on"
+msgstr "on"
+
+#: functions.php:25
+msgid "Primary Menu"
+msgstr "メインメニュー"
+
+#: comments.php:36
+msgid "%s Pingback"
+msgid_plural "%s Pingbacks"
+msgstr[0] "%sのピンバック"
+
+#: comments.php:14
+msgid "%s Comment"
+msgid_plural "%s Comments"
+msgstr[0] "%s件のコメント"
+
+#. Template Name of the theme
+msgid "Archive Template"
+msgstr "アーカイブテンプレート"
+
+#: singular.php:130
+msgid "About the post"
+msgstr "投稿について"
+
+#: singular.php:117
+msgid "Author website"
+msgstr "投稿者サイト"
+
+#: singular.php:114
+msgid "Author archive"
+msgstr "投稿者アーカイブ"
+
+#: singular.php:91
+msgid "About the author"
+msgstr "作成者について"
+
+#: singular.php:78
+msgid "Pages:"
+msgstr "固定ページ:"
+
+#: header.php:95
+msgid "Show the search field"
+msgstr "検索欄を表示"
+
+#: header.php:62
+msgid "Menu"
+msgstr "メニュー"
+
+#: inc/classes/class-radcliffe-customize.php:51
+msgid "Accent Color"
+msgstr "アクセント色"
+
+#: inc/classes/class-radcliffe-customize.php:24
+msgid "Upload a logo to replace the default site name and description in the header"
+msgstr "ロゴをアップロードし、ヘッダーのデフォルトサイト名と説明を置き換えます"
+
+#: inc/classes/class-radcliffe-customize.php:22
+#: inc/classes/class-radcliffe-customize.php:32
+msgid "Logo"
+msgstr "ロゴ"
+
+#: functions.php:369
+msgid "Reply"
+msgstr "返信"
+
+#: functions.php:367 singular.php:62
+msgid "Edit"
+msgstr "編集"
+
+#: functions.php:357
+msgid "Your comment is awaiting moderation."
+msgstr "あなたのコメントは承認待ちです。"
+
+#: functions.php:338
+msgid "(Post author)"
+msgstr "(投稿者)"
+
+#: functions.php:322
+msgid "(Edit)"
+msgstr "(編集)"
+
+#: functions.php:322
+msgid "Pingback:"
+msgstr "ピンバック:"
+
+#: functions.php:301
+msgid "Continue reading"
+msgstr "続きを読む"
+
+#: functions.php:152
+msgid "Widgets in this area will be shown in the right column in the footer."
+msgstr "このエリアのウィジェットはフッター右の列に表示されます。"
+
+#: functions.php:150
+msgid "Footer C"
+msgstr "フッター C"
+
+#: functions.php:146
+msgid "Widgets in this area will be shown in the middle column in the footer."
+msgstr "このエリアのウィジェットはフッター中央の列に表示されます。"
+
+#: functions.php:144
+msgid "Footer B"
+msgstr "フッター B"
+
+#: functions.php:140
+msgid "Widgets in this area will be shown in the left column in the footer."
+msgstr "このエリアのウィジェットはフッター左の列に表示されます。"
+
+#: functions.php:138
+msgid "Footer A"
+msgstr "フッター A"
+
+#: footer.php:41
+msgid "Up"
+msgstr "稼働中"
+
+#: footer.php:41
+msgid "Theme by"
+msgstr "テーマの著者"
+
+#: content.php:32
+msgid "Sticky"
+msgstr "先頭に固定表示"
+
+#: comments.php:51
+msgid "Newer Comments"
+msgstr "新しいコメント"
+
+#: comments.php:50
+msgid "Older Comments"
+msgstr "過去のコメント"
+
+#: comments.php:18
+msgid "Add yours"
+msgstr "追加"
+
+#: 404.php:19
+msgid "It seems like you have tried to open a page that doesn't exist. It could have been deleted, moved, or it never existed at all. You are welcome to search for what you are looking for with the form below."
+msgstr "存在しないページを開こうとしたようです。削除されたか、移動されたか、あるいはもともと存在しない可能性もあります。以下のフォームから検索することができます。"
+
+#: 404.php:11
+msgid "Error 404"
+msgstr "エラー 404"
+
+#. Author of the theme
+msgid "Anders Norén"
+msgstr "Anders Norén"
