@@ -19,22 +19,22 @@
 
     <div class="documentContainer">
         <div class="documentImage firstDocument">
-            <a href="">
+            <a href="<?php bloginfo('url'); ?>/doc_download_1/">
                 <img src="<?php echo get_template_directory_uri(); ?>/dist/img/undraw_Investing_re_bov7.png" alt="">
                 <p>テキストテキストテキストテキストテキ<br/>ストテキストテキストテキストテキストテキ<br/>ストテキストテキストテキス</p>
             </a>
         </div>
 
         <div class="documentImage otherDocument">
-            <a href="">
-                <img src="<?php echo get_template_directory_uri(); ?>/dist/img/undraw_Investing_re_bov7.png" alt="">
+            <a href="<?php bloginfo('url'); ?>/doc_download_2/">
+                <img src="<?php echo get_template_directory_uri(); ?>/dist/img/undraw_Development_re_g5hq.png" alt="">
                 <p>テキストテキストテキストテキストテキ<br/>ストテキストテキストテキストテキストテキ<br/>ストテキストテキストテキス</p>
             </a>
         </div>
         
         <div class="documentImage otherDocument">
-            <a href="">
-                <img src="<?php echo get_template_directory_uri(); ?>/dist/img/undraw_Investing_re_bov7.png" alt="">
+            <a href="<?php bloginfo('url'); ?>/doc_download_3/">
+                <img src="<?php echo get_template_directory_uri(); ?>/dist/img/undraw_Edit_photo_re_ton4.png" alt="">
                 <p>テキストテキストテキストテキストテキ<br/>ストテキストテキストテキストテキストテキ<br/>ストテキストテキストテキス</p>
             </a>
         </div>
@@ -57,22 +57,22 @@
 
         <div class="documentContainer">
             <div class="documentImage firstDocument">
-                <a href="">
-                    <img src="<?php echo get_template_directory_uri(); ?>/dist/img/undraw_Investing_re_bov7.png" alt="">
+                <a href="<?php bloginfo('url'); ?>/doc_download_4/">
+                    <img src="<?php echo get_template_directory_uri(); ?>/dist/img/undraw_Filing_system_re_56h6.png" alt="">
                     <p>テキストテキストテキストテキストテキ<br/>ストテキストテキストテキストテキストテキ<br/>ストテキストテキストテキス</p>
                 </a>
             </div>
 
             <div class="documentImage otherDocument">
-                <a href="">
-                    <img src="<?php echo get_template_directory_uri(); ?>/dist/img/undraw_Investing_re_bov7.png" alt="">
+                <a href="<?php bloginfo('url'); ?>/doc_download_5/">
+                    <img src="<?php echo get_template_directory_uri(); ?>/dist/img/undraw_Growth_analytics_re_pyxf.png" alt="">
                     <p>テキストテキストテキストテキストテキ<br/>ストテキストテキストテキストテキストテキ<br/>ストテキストテキストテキス</p>
                 </a>
             </div>
             
             <div class="documentImage otherDocument">
-                <a href="">
-                    <img src="<?php echo get_template_directory_uri(); ?>/dist/img/undraw_Investing_re_bov7.png" alt="">
+                <a href="<?php bloginfo('url'); ?>/doc_download_6/">
+                    <img src="<?php echo get_template_directory_uri(); ?>/dist/img/undraw_Image_upload_re_w7pm.png" alt="">
                     <p>テキストテキストテキストテキストテキ<br/>ストテキストテキストテキストテキストテキ<br/>ストテキストテキストテキス</p>
                 </a>
             </div>
@@ -96,22 +96,22 @@
 
         <div class="documentContainer">
             <div class="documentImage firstDocument">
-                <a href="">
-                    <img src="<?php echo get_template_directory_uri(); ?>/dist/img/undraw_Investing_re_bov7.png" alt="">
+                <a href="<?php bloginfo('url'); ?>/doc_download_7/">
+                    <img src="<?php echo get_template_directory_uri(); ?>/dist/img/undraw_Pitching_re_fpgk.png" alt="">
                     <p>テキストテキストテキストテキストテキ<br/>ストテキストテキストテキストテキストテキ<br/>ストテキストテキストテキス</p>
                 </a>
             </div>
 
             <div class="documentImage otherDocument">
-                <a href="">
-                    <img src="<?php echo get_template_directory_uri(); ?>/dist/img/undraw_Investing_re_bov7.png" alt="">
+                <a href="<?php bloginfo('url'); ?>/doc_download_8/">
+                    <img src="<?php echo get_template_directory_uri(); ?>/dist/img/undraw_Segment_analysis_re_ocsl.png" alt="">
                     <p>テキストテキストテキストテキストテキ<br/>ストテキストテキストテキストテキストテキ<br/>ストテキストテキストテキス</p>
                 </a>
             </div>
             
             <div class="documentImage otherDocument">
-                <a href="">
-                    <img src="<?php echo get_template_directory_uri(); ?>/dist/img/undraw_Investing_re_bov7.png" alt="">
+                <a href="<?php bloginfo('url'); ?>/doc_download_9/">
+                    <img src="<?php echo get_template_directory_uri(); ?>/dist/img/undraw_Transfer_files_re_a2a9.png" alt="">
                     <p>テキストテキストテキストテキストテキ<br/>ストテキストテキストテキストテキストテキ<br/>ストテキストテキストテキス</p>
                 </a>
             </div>

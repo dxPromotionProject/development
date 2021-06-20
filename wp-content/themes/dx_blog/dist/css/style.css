@@ -19,6 +19,7 @@ header{
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: 1920px;
   /* margin-left: 92px; */
 }
 
@@ -166,6 +167,9 @@ header .list #sign_up a{
   /* display: table; */
   height: 68px;
   margin-bottom: 183px;
+  cursor: pointer;
+  /* IE対応のため下記も追加 */
+  cursor: hand;
 }
 
 .displayNextDocument .documentInner{
@@ -323,12 +327,12 @@ table{
 }
 
 /* download */
-#docDownloadTitle{
+.docDownloadTitle{
   text-align: center;
   margin: auto;
 }
 
-#docDownloadTitle h1{
+.docDownloadTitle h1{
   font-size: 72px;
   border-bottom:solid;
   border-color:#D9FF10;
@@ -338,7 +342,7 @@ table{
   margin: auto;
 }
 
-#docDownloadTitle h2{
+.docDownloadTitle h2{
   width: 380px;
   margin: auto;
   font-size: 33px;
@@ -347,36 +351,62 @@ table{
 
 .docDownloadLeft{
   display: flex;
+  padding-top: 64px;
+  padding-bottom: 117px;
+}
+
+.docDownloadContainer{
+  margin-left: 71px;
 }
 
 .docDownloadImage {
   color: #707070;
   margin:0;
   width: 909px;
+  height: 415px;
 }
 
 .docDownloadImage img{
   height: 415px;
   width: 909px;
-  border: 1px solid;
+  border: 1px solid #707070;
   border-radius: 20px;
 }
 
 .docDownloadDescription{
   width: 909px;
-  border: 1px solid;
+  height: 448px;
+  border: 1px solid #707070;
   border-radius: 20px;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.docDownloadDescription .docDownloadDescriptionInline{
+  display: inline-block;
+  text-align: left;
+}
+
+.docDownloadDescription .docDownloadDescriptionInline h2{
+  font-size: 28px;
+  margin: 0;
+}
+
+.docDownloadDescription .docDownloadDescriptionInline p{
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .docDownloadButton{
   padding-top: 37px;
   text-align: center;
   width: 885.81px;
-  height: 862.62px;
+  height: 863px;
   /* margin-left: 159px; */
   /* display: table; */
-  margin-bottom: 183px;
-  border: 1px solid;
+  margin-left: 15px;
+  border: 1px solid #707070;
   border-radius: 52px;
 }
 
@@ -406,7 +436,8 @@ footer{
   background-color:#004AAD ;
   min-height: 100vh;
   position: relative;/*←相対位置*/
-  height: 654px;
+  /* height: 654px; */
+  width: 1920px;
 }
 
 footer .container{

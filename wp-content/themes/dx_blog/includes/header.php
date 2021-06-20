@@ -53,6 +53,14 @@
 
 <a href="<?php echo home_url('policy'); ?>">policy</a> -->
 
-<a href="<?php echo home_url('doc_download'); ?>">download</a>
+<a href="<?php echo home_url('doc_download_1'); ?>">download1</a>
+<a href="<?php echo home_url('doc_download_2'); ?>">download2</a>
+<a href="<?php echo home_url('doc_download_3'); ?>">download3</a>
+<a href="<?php echo home_url('doc_download_4'); ?>">download4</a>
+<a href="<?php echo home_url('doc_download_5'); ?>">download5</a>
+<a href="<?php echo home_url('doc_download_6'); ?>">download6</a>
+<a href="<?php echo home_url('doc_download_7'); ?>">download7</a>
+<a href="<?php echo home_url('doc_download_8'); ?>">download8</a>
+<a href="<?php echo home_url('doc_download_9'); ?>">download9</a>
 
 <br>
