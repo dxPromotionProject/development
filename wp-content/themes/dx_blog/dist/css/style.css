@@ -14,10 +14,17 @@ li{
 
 /* header */
 header{
+  border-bottom: solid 1px #707070;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-left: 92px;
+  /* margin-left: 92px; */
+}
+
+header .logo #logo_word{
+  font-size: 22px;
+  margin-left: 91px;
 }
 
 header .linkbox{
@@ -30,8 +37,31 @@ header .list{
   justify-content: space-around;
 }
 
+header .list #line{
+  padding-left: 177px;
+}
+
 header .list .nav{
-  padding: 15px;
+  padding: 12px;
+}
+
+header .list .nav a{
+  color: #000000;
+  font-size: 37px;
+  text-decoration:none;
+}
+
+header .list .nav img{
+  width: 67px;
+  height: 69px;
+}
+
+header .list #article.nav{
+  width: 94px;
+}
+
+header #usefulDocument{
+  width: 228px;
 }
 
 header li img{
@@ -39,33 +69,389 @@ header li img{
 }
 
 header .list #sign_up{
-  margin-left: 201px;
+  text-align: center;
+  width: 258px;
+  /* height: 90px; */
+  margin-left: 159px;
+  background-color: #004AAD;
+  border-radius: 45px;
+  border: 4px solid #D9FF10;
 }
 
+header .list #sign_up a{
+  font-size: 33px;
+  width: 214px;
+  height: 39px;
+  color: white;
+  text-decoration:none;
+}
+
+#line {
+  text-align: right;
+}
+
+/* document */
+#documentMain{
+  margin-left: 126px;
+}
+#documentTopTitle{
+  padding-bottom: 134px;
+}
+
+#documentTopTitle h1{
+  font-size: 66px;
+}
+
+.blueLine{
+  border: 4px solid #004AAD;
+  background-color: #004AAD;
+  width: 1153px;
+}
+
+.documentSubTitle{
+  display: flex;
+  align-items: flex-end;
+}
+
+.documentSubTitle h1{
+  font-size: 49px;
+}
+
+.documentSubTitle p{
+  font-size: 33px;
+  color: #004AAD;
+  margin-bottom: 35px;
+  margin-left: 41px;
+}
+
+.documentContainer{
+  margin-top: 46px;
+  display: flex;
+}
+
+.documentContainer .firstDocument{
+  padding-left: 24px;
+}
+
+.documentContainer .otherDocument{
+  padding-left: 142px;
+}
+
+.documentImage a{
+  text-decoration:none;
+}
+
+.documentImage img{
+  width: 429px;
+  height: 251px;
+  border: 1px solid;
+}
+
+.documentImage p{
+  color: #707070;
+  margin:0;
+  width: 429px;
+  border: 1px solid;
+  height: 138px;
+  text-align:center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.displayNextDocument{
+  padding-top: 37px;
+  text-align: center;
+  width: 1625px;
+  /* margin-left: 159px; */
+  /* display: table; */
+  height: 68px;
+  margin-bottom: 183px;
+}
+
+.displayNextDocument .documentInner{
+  display:inline-block;
+}
+
+.displayNextDocument p{
+  font-size: 38px;
+  width: 739px;
+  color: #FFFFFF;
+  background-color: #004AAD;
+  border-radius: 45px;
+  display: table-cell;
+  vertical-align: middle;
+  height: 68px;
+}
+
+
+/* description */
+#descriptionTitle{
+  text-align: center;
+  margin: auto;
+}
+
+#descriptionTitle h1{
+  font-size: 60px;
+  border-bottom:solid;
+  border-color:#D9FF10;
+  border-width:19px;
+  width: 730px;
+  margin-bottom: 0;
+}
+
+#descriptionTitle h2{
+  margin: 0;
+  font-size: 19px;
+  color: #004AAD;
+}
+
+#descriptionContentOutside{
+  margin-top: 50px;
+  background: linear-gradient(180deg, #004AAD 0%, #004AAD 50%, white 50%, white 100%);
+}
+
+#descriptionContentInside{
+  width: 80%;
+  border: 1px solid #707070; 
+  border-radius: 45px;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  font-size: 17px;
+  color: #707070;
+}
+
+table{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tableLeft {
+  background-color: #F6F6F6;
+}
+
+
+/* terms */
+#termTitle{
+  text-align: center;
+  margin: auto;
+}
+
+#termTitle h1{
+  font-size: 80px;
+  border-bottom:solid;
+  border-color:#D9FF10;
+  border-width:19px;
+  width: 330px;
+  margin-bottom: 0;
+}
+
+#termTitle h2{
+  margin: 0;
+  font-size: 33px;
+  color: #004AAD;
+}
+
+#termContentOutside{
+  margin-top: 50px;
+  background: linear-gradient(180deg, #004AAD 0%, #004AAD 10%, white 10%, white 100%);
+}
+
+#termContentInside{
+  width: 80%;
+  border: 1px solid #707070; 
+  border-radius: 45px;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  font-size: 17px;
+  color: #707070;
+}
+
+#termContentInside div{
+  padding-left: 25px;
+}
+
+/* policy */
+#policyTitle{
+  text-align: center;
+  margin: auto;
+}
+
+#policyTitle h1{
+  font-size: 88px;
+  border-bottom:solid;
+  border-color:#D9FF10;
+  border-width:19px;
+  width: 896px;
+  margin-bottom: 0;
+}
+
+#policyTitle h2{
+  width: 250px;
+  margin: auto;
+  font-size: 33px;
+  color: #004AAD;
+}
+
+#policyContentOutside{
+  margin-top: 50px;
+  background: linear-gradient(180deg, #004AAD 0%, #004AAD 10%, white 10%, white 100%);
+}
+
+#policyContentInside{
+  margin-top: 120px;
+  margin-bottom: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  font-size: 41px;
+  width: 1610px;
+  border: 1px solid #707070; 
+  border-radius: 45px;
+  color: #707070;
+}
+
+#policyContentInside p{
+  padding-left: 20px;
+}
+
+/* download */
+#docDownloadTitle{
+  text-align: center;
+  margin: auto;
+}
+
+#docDownloadTitle h1{
+  font-size: 72px;
+  border-bottom:solid;
+  border-color:#D9FF10;
+  border-width:19px;
+  width: 871px;
+  margin-bottom: 0;
+  margin: auto;
+}
+
+#docDownloadTitle h2{
+  width: 380px;
+  margin: auto;
+  font-size: 33px;
+  color: #004AAD;
+}
+
+.docDownloadLeft{
+  display: flex;
+}
+
+.docDownloadImage {
+  color: #707070;
+  margin:0;
+  width: 909px;
+}
+
+.docDownloadImage img{
+  height: 415px;
+  width: 909px;
+  border: 1px solid;
+  border-radius: 20px;
+}
+
+.docDownloadDescription{
+  width: 909px;
+  border: 1px solid;
+  border-radius: 20px;
+}
+
+.docDownloadButton{
+  padding-top: 37px;
+  text-align: center;
+  width: 885.81px;
+  height: 862.62px;
+  /* margin-left: 159px; */
+  /* display: table; */
+  margin-bottom: 183px;
+  border: 1px solid;
+  border-radius: 52px;
+}
+
+.docDownloadButton .docDownloadButtonInner{
+  display:inline-block;
+}
+
+.docDownloadButton p{
+  font-size: 28px;
+  width: 406px;
+  color: #FFFFFF;
+  background-color: #004AAD;
+  border-radius: 55px;
+  display: table-cell;
+  vertical-align: middle;
+  height: 68px;
+}
+
+
+
+/* .downloadButton {
+
+} */
 
 /* footer */
 footer{
   background-color:#004AAD ;
   min-height: 100vh;
   position: relative;/*←相対位置*/
-  height: 40px;
+  height: 654px;
 }
 
 footer .container{
   width: 100%;
   text-align: center;
-  padding: 30px 0;
+  padding-top: 227px;
   position: absolute;
 }
 
 footer .container p{
+  font-size: 39px;
   color: white;
 }
 
-footer .list li a{
-  color: white;
+footer .container a img{
+  padding-right: 27px;
+  width: 67px;
+  height: 69px;
 }
 
+footer #relation{
+  padding-top: 49px;
+  position: relative;
+}
+
+footer #list{
+  padding-left: 80%;
+}
+
+footer #list li{
+  font-weight: bold;
+  padding-bottom: 62px;
+}
+
+footer #list li a{
+  font-size: 33px;
+  color: white;
+  text-decoration:none;
+}
+
+footer #writing{
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
 
 /* border-radius: 0;
 border: 2px solid #fafafa; */

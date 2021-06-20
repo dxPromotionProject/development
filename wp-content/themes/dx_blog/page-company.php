@@ -1,6 +1,7 @@
-company
-<h2 class="post-title">
-<!-- <?php wp_head();?> -->
+<?php get_header(); ?>
 
-<?php the_title(); ?>
-</h2>
+<?php get_template_part('includes/header'); ?>
+
+company
+
+<?php get_template_part('includes/footer'); ?>
