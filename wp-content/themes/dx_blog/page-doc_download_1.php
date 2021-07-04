@@ -1,3 +1,11 @@
+<?php
+// ログインしていなかったらトップページに遷移させる。
+if (!is_user_logged_in()){
+    header( "location: " . home_url() );
+}
+var_dump($name);
+?>
+
 <?php get_header(); ?>
 
 <?php get_template_part('includes/header'); ?>

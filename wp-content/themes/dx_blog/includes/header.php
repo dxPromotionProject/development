@@ -29,7 +29,11 @@
                 </a>
             </li>
             <li class="nav" id="sign_up">
-                <a href="">新規会員登録</a>
+            <!-- <div class="nav" id="sign_up"> -->
+                <a href="">
+                    新規会員登録
+                </a>
+            <!-- </div> -->
             </li>
         </ul>
     </div>

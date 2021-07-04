@@ -50,6 +50,7 @@ header .list .nav a{
   color: #000000;
   font-size: 37px;
   text-decoration:none;
+  font-weight: bold;
 }
 
 header .list .nav img{
@@ -81,14 +82,215 @@ header .list #sign_up{
 
 header .list #sign_up a{
   font-size: 33px;
-  width: 214px;
-  height: 39px;
+  /* width: 214px;
+  height: 39px; */
   color: white;
   text-decoration:none;
 }
 
 #line {
   text-align: right;
+}
+
+/* 新規会員登録のボタンにidを付与してレスポンシブに対応できるように書き換える
+もしかしたらcss自体を書き換えた方がいいのかもしれない */
+@media screen and (max-width: 1024px) {
+	/* 481px以上に適用されるCSS（タブレット用） */
+  header{
+    border-bottom: solid 1px #707070;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 105px;
+    /* margin-left: 92px; */
+  }
+  
+  header .logo #logo_word{
+    font-size: 1.3vw;
+    margin-left: 45px;
+  }
+  
+  header .linkbox{
+    width: 77%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  header .list{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  header .list #line{
+    padding-left: 60px;
+  }
+  
+  header .list .nav{
+    /* padding: 6px; */
+  }
+  
+  header .list .nav a{
+    color: #000000;
+    font-size: 1.6vw;
+    text-decoration:none;
+    font-weight: bold;
+  }
+  
+  header .list .nav img{
+    width: 100%;
+    height: auto;
+  }
+  
+  header .list #article.nav{
+    width: 20%;
+  }
+  
+  header #usefulDocument{
+    width: 32%;
+  }
+
+  header #operatingCompany{
+    width: 20%;
+  }
+  
+  header li img{
+    width: 25%;
+  }
+  
+  header .list #sign_up{
+    text-align: center;
+    width: 26%;
+    height: 10%;
+    margin-left: 10%;
+    padding-left: 4%;
+    background-color: #004AAD;
+    border-radius: 45px;
+    border: 3px solid #D9FF10;
+    display: flex;
+    align-items: center;
+  }
+  
+  header .list #sign_up a{
+    font-size: 1.3vw;
+    /* width: 0%;
+    height: 0px; */
+    color: white;
+    text-decoration: none;
+  }
+
+  header .list #sign_up a p{
+    margin: 0;
+  }
+  
+  #line {
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 479px) {
+	/* 481px以上に適用されるCSS（タブレット用） */
+  header{
+    border-bottom: solid 1px #707070;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 65px;
+    /* margin-left: 92px; */
+  }
+
+  header .logo{
+    width: 17%;
+  }
+  
+  header .logo #logo_word{
+    font-size: 0.2vw;
+    margin-left: 12%;
+  }
+  
+  header .linkbox{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  header .list{
+    padding-left: 4%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  header .list #line{
+    padding-left: 3%;
+  }
+  
+  header .list .nav{
+    padding: 1px;
+  }
+  
+  header .list .nav a{
+    color: #000000;
+    font-size: 1.8vw;
+    text-decoration:none;
+    font-weight: bold;
+  }
+  
+  header .list .nav img{
+    width: 100%;
+    height: auto;
+  }
+  
+  header .list #article.nav{
+    width: 15%;
+  }
+  
+  header #usefulDocument{
+    width: 40%;
+  }
+
+  header #operatingCompany{
+    width: 26%;
+  }
+  
+  header li img{
+    width: 13%;
+  }
+  
+  header .list #sign_up{
+    text-align: center;
+    width: 55%;
+    height: 10%;
+    margin-left: 4%;
+    margin-right: 5%;
+    padding-left: 5%;
+    background-color: #004AAD;
+    border-radius: 45px;
+    border: 3px solid #D9FF10;
+    display: flex;
+    align-items: center;
+  }
+  
+  header .list #sign_up a{
+    font-size: 2.8vw;
+    /* width: 30%; */
+    /* height: 19px; */
+    color: white;
+    text-decoration: none;
+  }
+
+  header .list #sign_up a p{
+    margin: 0;
+  }
+  
+  #line {
+    text-align: right;
+  }
 }
 
 /* document */
@@ -123,6 +325,7 @@ header .list #sign_up a{
   color: #004AAD;
   margin-bottom: 35px;
   margin-left: 41px;
+  font-weight: bold;
 }
 
 .documentContainer{
@@ -187,6 +390,241 @@ header .list #sign_up a{
   height: 68px;
 }
 
+#documentSecondDisplay{
+  margin-bottom: 314px;
+}
+
+@media screen and (max-width: 1024px) {
+  #documentMain{
+    width: 100%;
+    margin-left: 0;
+  }
+  #documentTopTitle{
+    padding-bottom: 7%;
+  }
+  
+  #documentTopTitle h1{
+    font-size: 3.3000000000000003vw;
+    margin-left: 3%;
+  }
+  
+  .blueLine{
+    border: 0.3vw solid #004AAD;
+    background-color: #004AAD;
+    width: 100%;
+  }
+  
+  .documentSubTitle{
+    display: flex;
+    align-items: flex-end;
+    margin-left: 3%;
+  }
+  
+  .documentSubTitle h1{
+    font-size: 2.9000000000000004vw;
+  }
+  
+  .documentSubTitle p{
+    font-size: 1.6vw;
+    color: #004AAD;
+    margin-bottom: 2.3000000000000003vw;
+    margin-left: 2.6vw;
+    font-weight: bold;
+  }
+  
+  .documentContainer{
+    margin-top: 3.4000000000000004vw;
+    display: block;
+  }
+  
+  .documentContainer .firstDocument{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    margin-bottom: 5%;
+  }
+  
+  .documentContainer .otherDocument{
+    padding-left:0%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 5%;
+  }
+  
+  .documentImage a{
+    text-decoration:none;
+  }
+  
+  .documentImage img{
+    width: 479px;
+    height: 251px;
+    border: 1px solid;
+  }
+  
+  .documentImage p{
+    color: #707070;
+    margin:0;
+    width: 479px;
+    border: 1px solid;
+    height: 138px;
+    text-align:center;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  .displayNextDocument{
+    padding-top: 2%;
+    text-align: center;
+    width: 100%;
+    /* margin-left: 159px; */
+    /* display: table; */
+    height: 68px;
+    margin-bottom: 15%;
+    cursor: pointer;
+    /* IE対応のため下記も追加 */
+    cursor: hand;
+  }
+  
+  .displayNextDocument .documentInner{
+    display:inline-block;
+    width: 70%;
+  }
+  
+  .displayNextDocument p{
+    font-size: 3.8000000000000003vw;
+    width: 739px;
+    color: #FFFFFF;
+    background-color: #004AAD;
+    border-radius: 45px;
+    display: table-cell;
+    vertical-align: middle;
+    height: 68px;
+  }
+  
+  #documentSecondDisplay{
+    margin-bottom: 10%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  #documentMain{
+    width: 100%;
+    margin-left: 0;
+  }
+  #documentTopTitle{
+    padding-bottom: 7%;
+  }
+  
+  #documentTopTitle h1{
+    font-size: 3.3000000000000003vw;
+    margin-left: 3%;
+  }
+  
+  .blueLine{
+    border: 0.3vw solid #004AAD;
+    background-color: #004AAD;
+    width: 100%;
+  }
+  
+  .documentSubTitle{
+    display: flex;
+    align-items: flex-end;
+    margin-left: 3%;
+  }
+  
+  .documentSubTitle h1{
+    font-size: 2.9000000000000004vw;
+  }
+  
+  .documentSubTitle p{
+    font-size: 1.6vw;
+    color: #004AAD;
+    margin-bottom: 2.3000000000000003vw;
+    margin-left: 2.6vw;
+    font-weight: bold;
+  }
+  
+  .documentContainer{
+    margin-top: 3.4000000000000004vw;
+    display: block;
+  }
+
+  .documentContainer p{
+    font-size: 2.5vw;
+  }
+  
+  .documentContainer .firstDocument{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    margin-bottom: 5%;
+  }
+  
+  .documentContainer .otherDocument{
+    padding-left:0%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 5%;
+  }
+  
+  .documentImage a{
+    text-decoration:none;
+  }
+  
+  .documentImage img{
+    width: 270px;
+    height: 200px;
+    border: 1px solid;
+  }
+  
+  .documentImage p{
+    color: #707070;
+    margin:0;
+    width: 270px;
+    border: 1px solid;
+    height: 100px;
+    text-align:center;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  .displayNextDocument{
+    padding-top: 2%;
+    text-align: center;
+    width: 100%;
+    /* margin-left: 159px; */
+    /* display: table; */
+    height: 68px;
+    margin-bottom: 15%;
+    cursor: pointer;
+    /* IE対応のため下記も追加 */
+    cursor: hand;
+  }
+  
+  .displayNextDocument .documentInner{
+    display:inline-block;
+    width: 70%;
+  }
+  
+  .displayNextDocument p{
+    font-size: 3.8000000000000003vw;
+    width: 739px;
+    color: #FFFFFF;
+    background-color: #004AAD;
+    border-radius: 45px;
+    display: table-cell;
+    vertical-align: middle;
+    height: 68px;
+  }
+  
+  #documentSecondDisplay{
+    margin-bottom: 10%;
+  }
+}
 
 /* description */
 #descriptionTitle{
@@ -238,6 +676,111 @@ table{
   background-color: #F6F6F6;
 }
 
+@media screen and (max-width: 1024px) {
+  #descriptionTitle{
+    text-align: center;
+    margin: auto;
+  }
+  
+  #descriptionTitle h1{
+    font-size: 3.6vw;
+    border-bottom:solid;
+    border-color:#D9FF10;
+    border-width:0.9vw;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  
+  #descriptionTitle h2{
+    margin: 0;
+    font-size: 1.3vw;
+    color: #004AAD;
+  }
+  
+  #descriptionContentOutside{
+    margin-top: 50px;
+    background: linear-gradient(180deg, #004AAD 0%, #004AAD 50%, white 50%, white 100%);
+  }
+  
+  #descriptionContentInside{
+    width: 80%;
+    border: 1px solid #707070; 
+    border-radius: 4.5vw;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    font-size: 17px;
+    color: #707070;
+  }
+  
+  table{
+    margin-top: 6%;
+    margin-bottom: 6%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .tableLeft {
+    background-color: #F6F6F6;
+    font-size: 1.8vw;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  #descriptionTitle{
+    text-align: center;
+    margin: auto;
+  }
+  
+  #descriptionTitle h1{
+    font-size: 3.6vw;
+    border-bottom:solid;
+    border-color:#D9FF10;
+    border-width:0.9vw;
+    width: 63%;
+    margin-bottom: 0;
+    margin: auto;
+  }
+  
+  #descriptionTitle h2{
+    margin: 0;
+    font-size: 1.1vw;
+    color: #004AAD;
+  }
+  
+  #descriptionContentOutside{
+    margin-top: 50px;
+    background: linear-gradient(180deg, #004AAD 0%, #004AAD 50%, white 50%, white 100%);
+  }
+  
+  #descriptionContentInside{
+    width: 80%;
+    border: 1px solid #707070; 
+    border-radius: 4.5vw;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    font-size: 17px;
+    color: #707070;
+  }
+  
+  table{
+    margin-top: 6%;
+    margin-bottom: 6%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .tableLeft {
+    background-color: #F6F6F6;
+    font-size: 1.8vw;
+  }
+}
+
 
 /* terms */
 #termTitle{
@@ -282,6 +825,100 @@ table{
   padding-left: 25px;
 }
 
+@media screen and (max-width: 1024px) {
+  #termTitle{
+    text-align: center;
+    margin: auto;
+  }
+  
+  #termTitle h1{
+    margin: auto;
+    font-size: 3.6vw;
+    border-bottom:solid;
+    border-color:#D9FF10;
+    border-width: 0.9vw;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  
+  #termTitle h2{
+    margin: 0;
+    font-size: 2vw;
+    color: #004AAD;
+  }
+  
+  #termContentOutside{
+    margin-top: 50px;
+    background: linear-gradient(180deg, #004AAD 0%, #004AAD 10%, white 10%, white 100%);
+  }
+  
+  #termContentInside{
+    width: 80%;
+    border: 1px solid #707070; 
+    border-radius: 45px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    font-size: 17px;
+    color: #707070;
+  }
+  
+  #termContentInside div{
+    padding-left: 25px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  #termTitle{
+    text-align: center;
+    margin: auto;
+  }
+  
+  #termTitle h1{
+    margin: auto;
+    font-size: 3.6vw;
+    border-bottom:solid;
+    border-color:#D9FF10;
+    border-width: 0.9vw;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  
+  #termTitle h2{
+    margin: 0;
+    font-size: 2vw;
+    color: #004AAD;
+  }
+  
+  #termContentOutside{
+    margin-top: 6%;
+    background: linear-gradient(180deg, #004AAD 0%, #004AAD 10%, white 10%, white 100%);
+  }
+  
+  #termContentInside{
+    width: 80%;
+    border: 1px solid #707070; 
+    border-radius: 45px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    font-size: 2vw;
+    color: #707070;
+  }
+  
+  #termContentInside div{
+    padding-left: 5%;
+  }
+
+  /* #termContentInside h2 {
+    font-size: 4vw;
+  } */
+}
+
 /* policy */
 #policyTitle{
   text-align: center;
@@ -324,6 +961,52 @@ table{
 
 #policyContentInside p{
   padding-left: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  #policyTitle{
+    text-align: center;
+    margin: auto;
+  }
+  
+  #policyTitle h1{
+    font-size: 3.6vw;
+    border-bottom:solid;
+    border-color:#D9FF10;
+    border-width:0.9vw;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  
+  #policyTitle h2{
+    width: 19vw;
+    margin: auto;
+    font-size: 1.9vw;
+    color: #004AAD;
+  }
+  
+  #policyContentOutside{
+    width: 100%;
+    margin-top: 5%;
+    background: linear-gradient(180deg, #004AAD 0%, #004AAD 10%, white 10%, white 100%);
+  }
+  
+  #policyContentInside{
+    margin-top: 120px;
+    margin-bottom: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    font-size: 2vw;
+    width: 80%;
+    border: 1px solid #707070; 
+    border-radius: 4.5vw;
+    color: #707070;
+  }
+  
+  #policyContentInside p{
+    padding-left: 4%;
+  }
 }
 
 /* download */
@@ -402,7 +1085,7 @@ table{
   padding-top: 37px;
   text-align: center;
   width: 885.81px;
-  height: 863px;
+  /* height: 863px; */
   /* margin-left: 159px; */
   /* display: table; */
   margin-left: 15px;
@@ -430,6 +1113,220 @@ table{
 /* .downloadButton {
 
 } */
+
+@media screen and (max-width: 1024px) {
+  .docDownloadMain {
+    width: 100%;
+  }
+
+  .docDownloadTitle{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+  
+  .docDownloadTitle h1{
+    font-size: 3.6vw;
+    border-bottom:solid;
+    border-color:#D9FF10;
+    border-width:0.9vw;
+    width: 44%;
+    margin-bottom: 0;
+    margin: auto;
+  }
+  
+  .docDownloadTitle h2{
+    width: 19vw;
+    margin: auto;
+    font-size: 1.6vw;
+    color: #004AAD;
+  }
+  
+  .docDownloadLeft{
+    width: 100%;
+    display: flex;
+    padding-top: 64px;
+    padding-bottom: 117px;
+  }
+  
+  .docDownloadContainer{
+    margin-left: 2%;
+  }
+  
+  .docDownloadImage {
+    color: #707070;
+    margin:0;
+    width: 50%;
+    height: 415px;
+  }
+  
+  .docDownloadImage img{
+    height: 100%;
+    width: 200%;
+    border: 1px solid #707070;
+    border-radius: 20px;
+  }
+  
+  .docDownloadDescription{
+    width: 2%;
+    height: 100%;
+    border: 1px solid #707070;
+    border-radius: 20px;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+  }
+  
+  .docDownloadDescription .docDownloadDescriptionInline{
+    display: inline-block;
+    text-align: left;
+  }
+  
+  .docDownloadDescription .docDownloadDescriptionInline h2{
+    font-size: 1.7000000000000001vw;
+    margin: 0;
+  }
+  
+  .docDownloadDescription .docDownloadDescriptionInline p{
+    font-size: 1.5vw;
+    font-weight: bold;
+  }
+  
+  .docDownloadButton{
+    padding-top: 37px;
+    text-align: center;
+    width: 885.81px;
+    /* height: 863px; */
+    /* margin-left: 159px; */
+    /* display: table; */
+    margin-left: 15px;
+    border: 1px solid #707070;
+    border-radius: 52px;
+  }
+  
+  .docDownloadButton .docDownloadButtonInner{
+    display:inline-block;
+    width: 70%;
+  }
+  
+  .docDownloadButton p{
+    font-size: 2vw;
+    width: 406px;
+    color: #FFFFFF;
+    background-color: #004AAD;
+    border-radius: 55px;
+    display: table-cell;
+    vertical-align: middle;
+    height: 68px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .docDownloadMain {
+    width: 100%;
+  }
+
+  .docDownloadTitle{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+  
+  .docDownloadTitle h1{
+    font-size: 3.6vw;
+    border-bottom:solid;
+    border-color:#D9FF10;
+    border-width:0.9vw;
+    width: 44%;
+    margin-bottom: 0;
+    margin: auto;
+  }
+  
+  .docDownloadTitle h2{
+    width: 19vw;
+    margin: auto;
+    font-size: 1.6vw;
+    color: #004AAD;
+  }
+  
+  .docDownloadLeft{
+    width: 100%;
+    display: flex;
+    padding-top: 5%;
+    padding-bottom: 7%;
+  }
+  
+  .docDownloadContainer{
+    margin-left: 2%;
+  }
+  
+  .docDownloadImage {
+    color: #707070;
+    margin:0;
+    width: 50%;
+    height: 200px;
+  }
+  
+  .docDownloadImage img{
+    height: 100%;
+    width: 200%;
+    border: 1px solid #707070;
+    border-radius: 8px;
+  }
+  
+  .docDownloadDescription{
+    width: 2%;
+    height: 100%;
+    border: 1px solid #707070;
+    border-radius: 8px;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+  }
+  
+  .docDownloadDescription .docDownloadDescriptionInline{
+    display: inline-block;
+    text-align: left;
+  }
+  
+  .docDownloadDescription .docDownloadDescriptionInline h2{
+    font-size: 1.7000000000000001vw;
+    margin: 0;
+  }
+  
+  .docDownloadDescription .docDownloadDescriptionInline p{
+    font-size: 1.5vw;
+    font-weight: bold;
+  }
+  
+  .docDownloadButton{
+    padding-top: 37px;
+    text-align: center;
+    width: 885.81px;
+    /* height: 863px; */
+    /* margin-left: 159px; */
+    /* display: table; */
+    margin-left: 1%;
+    border: 1px solid #707070;
+    border-radius: 8px;
+  }
+  
+  .docDownloadButton .docDownloadButtonInner{
+    display:inline-block;
+    width: 70%;
+  }
+  
+  .docDownloadButton p{
+    font-size: 2vw;
+    width: 406px;
+    color: #FFFFFF;
+    background-color: #004AAD;
+    border-radius: 55px;
+    display: table-cell;
+    vertical-align: middle;
+    height: 68px;
+  }
+}
 
 /* footer */
 footer{
@@ -486,3 +1383,113 @@ footer #writing{
 
 /* border-radius: 0;
 border: 2px solid #fafafa; */
+
+@media screen and (max-width: 1024px) {
+  footer{
+    background-color:#004AAD ;
+    min-height: 100vh;
+    position: relative;/*←相対位置*/
+    /* height: 654px; */
+    width: 100%;
+  }
+  
+  footer .container{
+    width: 100%;
+    text-align: center;
+    padding-top: 11%;
+    position: absolute;
+  }
+  
+  footer .container p{
+    font-size: 1.8vw;
+    color: white;
+  }
+  
+  footer .container a img{
+    padding-right: 3%;
+    width: 6%;
+    height: auto;
+  }
+  
+  footer #relation{
+    padding-top: 5%;
+    position: relative;
+  }
+  
+  footer #list{
+    padding-left: 80%;
+  }
+  
+  footer #list li{
+    font-weight: bold;
+    padding-bottom: 10%;
+  }
+  
+  footer #list li a{
+    font-size: 1.5vw;
+    color: white;
+    text-decoration:none;
+  }
+  
+  footer #writing{
+    font-size: 1.5vw;
+    text-align: center;
+    color: white;
+  }
+}
+
+/* スマホ用 */
+@media screen and (max-width: 479px) {
+  footer{
+    background-color:#004AAD ;
+    min-height: 60vh;
+    position: relative;/*←相対位置*/
+    /* height: 654px; */
+    width: 100%;
+  }
+  
+  footer .container{
+    width: 100%;
+    text-align: center;
+    padding-top: 10%;
+    position: absolute;
+  }
+  
+  footer .container p{
+    font-size: 1.8vw;
+    color: white;
+  }
+  
+  footer .container a img{
+    padding-right: 3%;
+    width: 6%;
+    height: auto;
+  }
+  
+  footer #relation{
+    padding-top: 0;
+    position: relative;
+  }
+  
+  footer #list{
+    width: 35%;
+    padding-left: 75%;
+  }
+  
+  footer #list li{
+    font-weight: bold;
+    padding-bottom: 2%;
+  }
+  
+  footer #list li a{
+    font-size: 1.5vw;
+    color: white;
+    text-decoration:none;
+  }
+  
+  footer #writing{
+    font-size: 1.5vw;
+    text-align: center;
+    color: white;
+  }
+}
