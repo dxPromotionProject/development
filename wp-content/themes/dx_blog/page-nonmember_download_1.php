@@ -1,8 +1,9 @@
 <?php
-// ログインしていなかったら非会員用のページに遷移させる。
+// ログインしていなかったらトップページに遷移させる。
 // if (!is_user_logged_in()){
-//     header( "location: " . home_url('nonmember_download_1') );
+//     header( "location: " . home_url() );
 // }
+// var_dump($name);
 ?>
 
 <?php get_header(); ?>
@@ -32,12 +33,15 @@
                     <p>3．テキストテキストテキストテキストテキストテキストテキ<br>ストテキストテキストテキストテキストテキストテキス</p>
                     <p>3．テキストテキストテキストテキストテキストテキストテキ<br>ストテキストテキストテキストテキストテキストテキス</p>
                     <p>3．テキストテキストテキストテキストテキストテキストテキ<br>ストテキストテキストテキストテキストテキストテキス</p>
+                    <p>3．テキストテキストテキストテキストテキストテキストテキ<br>ストテキストテキストテキストテキストテキストテキス</p>
+                    <p>3．テキストテキストテキストテキストテキストテキストテキ<br>ストテキストテキストテキストテキストテキストテキス</p>
                 </div>
             </div>
         </div>
 
-        <div class="docDownloadButton">
-            <div class="docDownloadButtonInner">
+        <div class="nonMemberDocDownloadButton">
+            <div><?php echo do_shortcode('[wpmem_form register]');?></div>
+            <div class="nonMemberDocDownloadButtonInner">
                 <!-- <a href="http://localhost:8888/wordpress/download/51/"> -->
                 <a href="<?php bloginfo('url'); ?>/download/51/">
                     <p>資料をダウンロードする（無料）</p>
@@ -46,5 +50,5 @@
         </div>
     </div>
 </div>
-
+[wpmem_form register]
 <?php get_template_part('includes/footer'); ?>

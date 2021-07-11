@@ -1,3 +1,10 @@
+<?php
+// ログインしていなかったら非会員用のページに遷移させる。
+// if (!is_user_logged_in()){
+//     header( "location: " . home_url('nonmember_download_2') );
+// }
+?>
+
 <?php get_header(); ?>
 
 <?php get_template_part('includes/header'); ?>
@@ -21,6 +28,12 @@
                     <p>1．テキストテキストテキストテキストテキストテキストテキ<br>ストテキストテキストテキストテキストテキストテキス</p>
                     <p>2．テキストテキストテキストテキストテキストテキストテキ<br>ストテキストテキストテキストテキストテキストテキス</p>
                     <p>3．テキストテキストテキストテキストテキストテキストテキ<br>ストテキストテキストテキストテキストテキストテキス</p>
+                    <p>3．テキストテキストテキストテキストテキストテキストテキ<br>ストテキストテキストテキストテキストテキストテキス</p>
+                    <p>3．テキストテキストテキストテキストテキストテキストテキ<br>ストテキストテキストテキストテキストテキストテキス</p>
+                    <p>3．テキストテキストテキストテキストテキストテキストテキ<br>ストテキストテキストテキストテキストテキストテキス</p>
+                    <p>3．テキストテキストテキストテキストテキストテキストテキ<br>ストテキストテキストテキストテキストテキストテキス</p>
+                    <p>3．テキストテキストテキストテキストテキストテキストテキ<br>ストテキストテキストテキストテキストテキストテキス</p>
+                    <p>3．テキストテキストテキストテキストテキストテキストテキ<br>ストテキストテキストテキストテキストテキストテキス</p>
                 </div>
             </div>
         </div>
@@ -29,11 +42,15 @@
             <div class="docDownloadButtonInner">
                 <!-- <a href="http://localhost:8888/wordpress/download/51/"> -->
                 <a href="<?php bloginfo('url'); ?>/download/59/">
-                    <p>ダウンロードする（無料）</p>
+                    <p>資料をダウンロードする（無料）</p>
                 </a>
             </div>
         </div>
     </div>
 </div>
 
+<!-- 以下でJavaScriptの読み込み -->
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/dist/js/download.js"></script>
+
 <?php get_template_part('includes/footer'); ?>
+

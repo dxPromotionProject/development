@@ -35,6 +35,13 @@
                 </a>
             <!-- </div> -->
             </li>
+            <li class="nav" id="login">
+            <!-- <div class="nav" id="sign_up"> -->
+                <a href="">
+                    ログイン
+                </a>
+            <!-- </div> -->
+            </li>
         </ul>
     </div>
 </header>
@@ -66,5 +73,7 @@
 <a href="<?php echo home_url('doc_download_7'); ?>">download7</a>
 <a href="<?php echo home_url('doc_download_8'); ?>">download8</a>
 <a href="<?php echo home_url('doc_download_9'); ?>">download9</a>
+<a href="<?php echo home_url('nonmember_download_1'); ?>">非会員用download1</a>
+<a href="<?php echo home_url('nonmember_download_2'); ?>">非会員用download2</a>
 
 <br>

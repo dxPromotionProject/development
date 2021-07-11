@@ -29,7 +29,7 @@ header .logo #logo_word{
 }
 
 header .linkbox{
-  margin-left: auto;
+  /* margin-left: auto; */
   margin-right: auto;
 }
 
@@ -39,7 +39,7 @@ header .list{
 }
 
 header .list #line{
-  padding-left: 177px;
+  padding-left: 70px;
 }
 
 header .list .nav{
@@ -74,10 +74,11 @@ header .list #sign_up{
   text-align: center;
   width: 258px;
   /* height: 90px; */
-  margin-left: 159px;
+  margin-left: 46px;
   background-color: #004AAD;
   border-radius: 45px;
   border: 4px solid #D9FF10;
+  display: table;
 }
 
 header .list #sign_up a{
@@ -86,14 +87,35 @@ header .list #sign_up a{
   height: 39px; */
   color: white;
   text-decoration:none;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+header .list #login{
+  text-align: center;
+  width: 258px;
+  /* height: 90px; */
+  margin-left: 46px;
+  background-color: #00AD43;
+  border-radius: 45px;
+  border: 4px solid #D9FF10;
+  display: table;
+}
+
+header .list #login a{
+  font-size: 33px;
+  /* width: 214px;
+  height: 39px; */
+  color: white;
+  text-decoration:none;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 #line {
   text-align: right;
 }
 
-/* 新規会員登録のボタンにidを付与してレスポンシブに対応できるように書き換える
-もしかしたらcss自体を書き換えた方がいいのかもしれない */
 @media screen and (max-width: 1024px) {
 	/* 481px以上に適用されるCSS（タブレット用） */
   header{
@@ -125,11 +147,12 @@ header .list #sign_up a{
   }
   
   header .list #line{
-    padding-left: 60px;
+    padding-left: 5%;
+    padding-right: 3%;
   }
   
   header .list .nav{
-    /* padding: 6px; */
+    padding: 0px;
   }
   
   header .list .nav a{
@@ -165,15 +188,36 @@ header .list #sign_up a{
     width: 26%;
     height: 10%;
     margin-left: 10%;
-    padding-left: 4%;
+    /* padding-left: 4%; */
     background-color: #004AAD;
     border-radius: 45px;
     border: 3px solid #D9FF10;
-    display: flex;
+    display: table;
     align-items: center;
   }
   
   header .list #sign_up a{
+    font-size: 1.3vw;
+    /* width: 0%;
+    height: 0px; */
+    color: white;
+    text-decoration: none;
+  }
+
+  header .list #login{
+    text-align: center;
+    width: 26%;
+    height: 10%;
+    margin-left: 10%;
+    /* padding-left: 4%; */
+    background-color: #00AD43;
+    border-radius: 45px;
+    border: 3px solid #D9FF10;
+    display: table;
+    align-items: center;
+  }
+  
+  header .list #login a{
     font-size: 1.3vw;
     /* width: 0%;
     height: 0px; */
@@ -277,6 +321,28 @@ header .list #sign_up a{
   }
   
   header .list #sign_up a{
+    font-size: 2.8vw;
+    /* width: 30%; */
+    /* height: 19px; */
+    color: white;
+    text-decoration: none;
+  }
+
+  header .list #login{
+    text-align: center;
+    width: 55%;
+    height: 10%;
+    margin-left: 4%;
+    margin-right: 5%;
+    padding-left: 5%;
+    background-color: #00AD43;
+    border-radius: 45px;
+    border: 3px solid #D9FF10;
+    display: flex;
+    align-items: center;
+  }
+  
+  header .list #login a{
     font-size: 2.8vw;
     /* width: 30%; */
     /* height: 19px; */
@@ -1072,6 +1138,7 @@ table{
 }
 
 .docDownloadDescription .docDownloadDescriptionInline h2{
+  padding-top: 10px;
   font-size: 28px;
   margin: 0;
 }
@@ -1091,15 +1158,19 @@ table{
   margin-left: 15px;
   border: 1px solid #707070;
   border-radius: 52px;
+  padding-bottom: 5%;
 }
 
 .docDownloadButton .docDownloadButtonInner{
   display:inline-block;
+  position: sticky;
+  left: 0;
+  top: 10%;
 }
 
 .docDownloadButton p{
   font-size: 28px;
-  width: 406px;
+  width: 470px;
   color: #FFFFFF;
   background-color: #004AAD;
   border-radius: 55px;
@@ -1108,7 +1179,88 @@ table{
   height: 68px;
 }
 
+.nonMemberDocDownloadButton{
+  padding-top: 37px;
+  text-align: center;
+  width: 885.81px;
+  /* height: 863px; */
+  /* margin-left: 159px; */
+  /* display: table; */
+  margin-left: 15px;
+  border: 1px solid #707070;
+  border-radius: 52px;
+  padding-bottom: 5%;
+}
 
+.nonMemberDocDownloadButton .nonMemberDocDownloadButtonInner{
+  display:inline-block;
+}
+
+.nonMemberDocDownloadButton p{
+  font-size: 28px;
+  width: 470px;
+  color: #FFFFFF;
+  background-color: #004AAD;
+  border-radius: 55px;
+  display: table-cell;
+  vertical-align: middle;
+  height: 68px;
+}
+
+#wpmem_login legend, #wpmem_reg legend {
+  display: none;
+}
+
+.register_description {
+  text-align: left;
+  width: 748px;
+  margin: auto;
+}
+
+.my-row-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-row-wrapper label.text {
+  width: 340px;
+  font-weight: bold;
+  text-align: right;
+  font-size: 35px;
+}
+
+.div_text input#username.textbox {
+  width: 450px;
+}
+
+.div_text input#company_name.textbox {
+  width: 450px;
+}
+
+.div_text input#user_email.textbox {
+  width: 450px;
+}
+
+.div_text input#position_name.textbox {
+  width: 450px;
+}
+
+.div_text input#billing_phone.textbox {
+  width: 450px;
+}
+
+.div_text input#user_password.textbox {
+  width: 450px;
+}
+
+.div_text input#user_password_confirm.textbox {
+  width: 450px;
+}
+
+/* #wpmem_reg .req {
+  display: none;
+} */
 
 /* .downloadButton {
 
