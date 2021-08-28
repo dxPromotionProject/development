@@ -1,8 +1,7 @@
 <?php
-// ログインしていなかったら非会員用のページに遷移させる。
-// if (!is_user_logged_in()){
-//     header( "location: " . home_url('nonmember_download_1') );
-// }
+if (!is_user_logged_in()){
+    header( "location: " . home_url('nonmember_download_1') );
+}
 ?>
 
 <?php get_header(); ?>
@@ -38,7 +37,6 @@
 
         <div class="docDownloadButton">
             <div class="docDownloadButtonInner">
-                <!-- <a href="http://localhost:8888/wordpress/download/51/"> -->
                 <a href="<?php bloginfo('url'); ?>/download/51/">
                     <p>資料をダウンロードする（無料）</p>
                 </a>

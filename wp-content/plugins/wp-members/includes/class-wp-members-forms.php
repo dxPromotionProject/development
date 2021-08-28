@@ -776,7 +776,7 @@ class WP_Members_Forms {
 
 		// Build the input rows.
 		foreach ( $arr['inputs'] as $input ) {
-			$label = '<label for="' . esc_attr( $input['tag'] ) . '">' . $input['name'] . '</label>';
+			$label = '<div class="test"><label for="' . esc_attr( $input['tag'] ) . '">' . $input['name'] . '</label>';
 			$field = wpmem_form_field( array(
 				'name'     => $input['tag'], 
 				'type'     => $input['type'],
@@ -784,7 +784,7 @@ class WP_Members_Forms {
 				'required' => true,
 			) );
 			$field_before = ( $args['wrap_inputs'] ) ? '<div class="' . $this->sanitize_class( $input['div'] ) . '">' : '';
-			$field_after  = ( $args['wrap_inputs'] ) ? '</div>' : '';
+			$field_after  = ( $args['wrap_inputs'] ) ? '</div></div>' : '';
 			$rows[] = array( 
 				'row_before'   => $args['row_before'],
 				'label'        => $label,

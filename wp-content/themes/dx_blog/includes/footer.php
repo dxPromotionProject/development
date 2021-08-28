@@ -33,4 +33,5 @@
     </ul>
 </div>
 <div id="writing">@portbent.All right Reserved</div>
+<?php wp_footer(); ?>
 </footer>

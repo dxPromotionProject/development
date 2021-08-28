@@ -1,11 +1,3 @@
-<?php
-// ログインしていなかったらトップページに遷移させる。
-// if (!is_user_logged_in()){
-//     header( "location: " . home_url() );
-// }
-// var_dump($name);
-?>
-
 <?php get_header(); ?>
 
 <?php get_template_part('includes/header'); ?>
@@ -40,15 +32,24 @@
         </div>
 
         <div class="nonMemberDocDownloadButton">
-            <div><?php echo do_shortcode('[wpmem_form register]');?></div>
             <div class="nonMemberDocDownloadButtonInner">
                 <!-- <a href="http://localhost:8888/wordpress/download/51/"> -->
                 <a href="<?php bloginfo('url'); ?>/download/51/">
                     <p>資料をダウンロードする（無料）</p>
                 </a>
             </div>
+            <div class="nonMemberRegister">
+                <?php echo do_shortcode('[wpmem_form register]');?>
+            </div>
+
+            <div class="alreadyMemberLogin">
+                <h3>すでに会員の方は下記ボタンよりログインしてください</h3>
+            </div>
+
+            <div class="alreadyMemberLoginButton">
+                <p><a href="<?php echo home_url('login'); ?>">ログインページへ</a></p>
+            </div>
         </div>
     </div>
 </div>
-[wpmem_form register]
 <?php get_template_part('includes/footer'); ?>

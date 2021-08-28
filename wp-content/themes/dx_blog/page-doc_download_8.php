@@ -1,5 +1,4 @@
 <?php
-// ログインしていなかったら非会員用のページに遷移させる。
 if (!is_user_logged_in()){
     header( "location: " . home_url('nonmember_download_8') );
 }

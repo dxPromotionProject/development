@@ -12,15 +12,27 @@ li{
   list-style: none;
 }
 
-/* header */
+main{
+  /* margin: 0 auto; */
+  /* max-width: 90%; */
+  width: 100%;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+header
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 header{
   border-bottom: solid 1px #707070;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 1920px;
-  /* margin-left: 92px; */
+}
+
+header .displayUserName{
+  text-align: right;
+  font-size: 1em;
+  font-weight: 600;
 }
 
 header .logo #logo_word{
@@ -29,7 +41,6 @@ header .logo #logo_word{
 }
 
 header .linkbox{
-  /* margin-left: auto; */
   margin-right: auto;
 }
 
@@ -54,16 +65,15 @@ header .list .nav a{
 }
 
 header .list .nav img{
-  width: 67px;
   height: 69px;
 }
 
 header .list #article.nav{
-  width: 94px;
+  display: block;
 }
 
 header #usefulDocument{
-  width: 228px;
+  display: block;
 }
 
 header li img{
@@ -72,8 +82,6 @@ header li img{
 
 header .list #sign_up{
   text-align: center;
-  width: 258px;
-  /* height: 90px; */
   margin-left: 46px;
   background-color: #004AAD;
   border-radius: 45px;
@@ -83,8 +91,6 @@ header .list #sign_up{
 
 header .list #sign_up a{
   font-size: 33px;
-  /* width: 214px;
-  height: 39px; */
   color: white;
   text-decoration:none;
   display: table-cell;
@@ -93,8 +99,6 @@ header .list #sign_up a{
 
 header .list #login{
   text-align: center;
-  width: 258px;
-  /* height: 90px; */
   margin-left: 46px;
   background-color: #00AD43;
   border-radius: 45px;
@@ -104,8 +108,6 @@ header .list #login{
 
 header .list #login a{
   font-size: 33px;
-  /* width: 214px;
-  height: 39px; */
   color: white;
   text-decoration:none;
   display: table-cell;
@@ -125,52 +127,51 @@ header .list #login a{
     flex-direction: row;
     align-items: center;
     width: 100%;
-    height: 105px;
-    /* margin-left: 92px; */
+    height: 100px;
   }
-  
+
   header .logo #logo_word{
     font-size: 1.3vw;
     margin-left: 45px;
   }
-  
+
   header .linkbox{
     width: 77%;
     margin-left: auto;
     margin-right: auto;
   }
-  
+
   header .list{
     display: flex;
     align-items: center;
     justify-content: space-around;
   }
-  
+
   header .list #line{
     padding-left: 5%;
     padding-right: 3%;
   }
-  
+
   header .list .nav{
     padding: 0px;
   }
-  
+
   header .list .nav a{
     color: #000000;
     font-size: 1.6vw;
     text-decoration:none;
     font-weight: bold;
   }
-  
+
   header .list .nav img{
     width: 100%;
     height: auto;
   }
-  
+
   header .list #article.nav{
     width: 20%;
   }
-  
+
   header #usefulDocument{
     width: 32%;
   }
@@ -178,49 +179,43 @@ header .list #login a{
   header #operatingCompany{
     width: 20%;
   }
-  
+
   header li img{
     width: 25%;
   }
-  
+
   header .list #sign_up{
     text-align: center;
-    width: 26%;
+    width: 25%;
     height: 10%;
     margin-left: 10%;
-    /* padding-left: 4%; */
     background-color: #004AAD;
     border-radius: 45px;
     border: 3px solid #D9FF10;
     display: table;
     align-items: center;
   }
-  
+
   header .list #sign_up a{
     font-size: 1.3vw;
-    /* width: 0%;
-    height: 0px; */
     color: white;
     text-decoration: none;
   }
 
   header .list #login{
     text-align: center;
-    width: 26%;
+    width: 25%;
     height: 10%;
     margin-left: 10%;
-    /* padding-left: 4%; */
     background-color: #00AD43;
     border-radius: 45px;
     border: 3px solid #D9FF10;
     display: table;
     align-items: center;
   }
-  
+
   header .list #login a{
     font-size: 1.3vw;
-    /* width: 0%;
-    height: 0px; */
     color: white;
     text-decoration: none;
   }
@@ -228,7 +223,7 @@ header .list #login a{
   header .list #sign_up a p{
     margin: 0;
   }
-  
+
   #line {
     text-align: right;
   }
@@ -244,24 +239,23 @@ header .list #login a{
     align-items: center;
     width: 100%;
     height: 65px;
-    /* margin-left: 92px; */
   }
 
   header .logo{
-    width: 17%;
+    width: 15%;
   }
-  
+
   header .logo #logo_word{
     font-size: 0.2vw;
-    margin-left: 12%;
+    margin-left: 10%;
   }
-  
+
   header .linkbox{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
-  
+
   header .list{
     padding-left: 4%;
     width: 100%;
@@ -269,43 +263,43 @@ header .list #login a{
     align-items: center;
     justify-content: space-around;
   }
-  
+
   header .list #line{
     padding-left: 3%;
   }
-  
+
   header .list .nav{
     padding: 1px;
   }
-  
+
   header .list .nav a{
     color: #000000;
     font-size: 1.8vw;
     text-decoration:none;
     font-weight: bold;
   }
-  
+
   header .list .nav img{
     width: 100%;
     height: auto;
   }
-  
+
   header .list #article.nav{
     width: 15%;
   }
-  
+
   header #usefulDocument{
     width: 40%;
   }
 
   header #operatingCompany{
-    width: 26%;
+    width: 25%;
   }
-  
+
   header li img{
-    width: 13%;
+    width: 15%;
   }
-  
+
   header .list #sign_up{
     text-align: center;
     width: 55%;
@@ -319,11 +313,9 @@ header .list #login a{
     display: flex;
     align-items: center;
   }
-  
+
   header .list #sign_up a{
     font-size: 2.8vw;
-    /* width: 30%; */
-    /* height: 19px; */
     color: white;
     text-decoration: none;
   }
@@ -341,11 +333,9 @@ header .list #login a{
     display: flex;
     align-items: center;
   }
-  
+
   header .list #login a{
     font-size: 2.8vw;
-    /* width: 30%; */
-    /* height: 19px; */
     color: white;
     text-decoration: none;
   }
@@ -353,28 +343,279 @@ header .list #login a{
   header .list #sign_up a p{
     margin: 0;
   }
-  
+
   #line {
     text-align: right;
   }
 }
 
-/* document */
-#documentMain{
-  margin-left: 126px;
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TopPage
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#topTitle{
+  width: 100%;
+  display: flex;
 }
+
+#topTitle #topSentence{
+  width: 50%;
+}
+
+#topTitle #topSentence #ballon{
+  color: white;
+  position: relative;
+  background: #004AAD;
+  width: 90%;
+  box-shadow: 0.3vw 0.3vw #99beee;
+  text-align: center;
+  margin: auto;
+  margin-top: 6.5vw;
+  height: 7vw;
+}
+
+#topTitle #topSentence #ballon::before{
+  content: '';
+  position: absolute;
+  display: block;
+  right: 0;
+  width: 0px;
+  height: 0px;
+  left: 2.7vw;
+  bottom: -1.0vw;
+  margin: auto;
+  border-top: 0.9vw solid #99beee;
+  border-right: 0.9vw solid transparent;
+  border-left: 0.9vw solid transparent;
+}
+
+#topTitle #topSentence #ballon::after{
+  content: "";
+  position: absolute;
+  display: block;
+  right: 0;
+  bottom: -0.7vw;
+  left: 2vw;
+  width: 0px;
+  height: 0px;
+  margin: auto;
+  border-top: 0.9vw solid #004AAD;
+  border-right: 0.9vw solid transparent;
+  border-left: 0.9vw solid transparent;
+}
+
+#topTitle #topSentence #ballon p{
+  font-size: 4.5vw;
+  margin: 0;
+}
+
+#topTitle #topSentence #topBorder{
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  margin-top: 2.5vw;
+}
+
+#topTitle #topSentence #topBorder p{
+  font-weight: bold;
+  width: 100%;
+  font-size: 4.7vw;
+  border-bottom: inset 1vw;
+  border-color: #FFF700;
+  margin: auto;
+}
+
+#topTitle #topSentence h2{
+  text-align: center;
+  margin-top: 2.5vw;
+  font-size: 1.4vw;
+}
+
+#topTitle #topImage {
+  width: 50%;
+}
+
+#topTitle #topImage img {
+  width: 100%;
+}
+
+.latestArticle{
+  width: 100%;
+  height: 28vw;
+}
+
+.mainvisual {
+  height: 450px !important;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 23vw;
+}
+
+.swiper-slide img{
+  width: 100%;
+  height: 80%;
+}
+
+.swiper-slide h2{
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  background-color: white;
+}
+
+.mainvisual {
+  overflow-x: hidden;
+  height: 250px;
+}
+
+.swiper-wrapper{
+  height: 21vw !important;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+  display: block;
+}
+
+.swiper-pagination{
+  margin-top: 0.7vw;
+  position: relative !important;
+}
+
+.swiper-pagination-bullet{
+  width: 1.3vw !important;
+  height: 1.3vw !important;
+  bottom: 0px !important;
+}
+
+.swiper-pagination-bullets{
+  bottom: 0px !important;
+}
+
+.recommendArticle{
+  width: 90%;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 7%;
+}
+
+.recommendArticle ul{
+  width: 100%;
+}
+
+.recommendArticle li{
+  width: 90%;
+}
+
+.recommendArticle li img{
+  width: 50%;
+}
+
+.recommendArticleTitle{
+  display: flex;
+  align-items: flex-end;
+  margin-left: 3vw;
+}
+
+.recommendArticleTitle p{
+  margin-bottom: 1vw;
+  font-size: 2vw;
+}
+
+.recommendArticleTitle .recommendArticleTitleSub{
+  font-size: 2vw;
+  color: #004AAD;
+  margin-left: 2vw;
+  font-weight: bold;
+}
+
+.recommendArticleTitleLine .blueLine{
+  width: 45%;
+  margin-left: 3vw;
+}
+
+.recommendArticle .recommendArticleContent{
+  display: flex;
+  width: 100%;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.recommendArticle .recommendArticleContent .recommendArticleContentDetail{
+  width: 30%;
+  margin-bottom: 7%;
+  border: 0.1vw solid #707070;
+  position: relative;
+  height: 20vw;
+  box-shadow: 1vw 1vw 0.4vw #707070;
+}
+
+.recommendArticle .recommendArticleContent .recommendArticleContentDetail a{
+  text-decoration: none;
+}
+
+.recommendArticle .recommendArticleContent .recommendArticleContentDetail a img{
+  width: 100%;
+  position: absolute;
+  height: 55%;
+  border-bottom: 0.1vw solid #707070;
+}
+
+.recommendArticle .recommendArticleContent .recommendArticleContentDetail a h3{
+  position: relative;
+  top: 50%;
+  left: 42%;
+  border: 0.1vw solid;
+  width: 20%;
+  margin: 0;
+  text-align: center;
+  border-radius: 1vw;
+  background-color: #004AAD;
+  color: white;
+  font-size: 1vw;
+}
+
+.recommendArticle .recommendArticleContent .recommendArticleContentDetail a h3:hover{
+  position: relative;
+  top: 50%;
+  left: 42%;
+  border: 1px solid;
+  width: 20%;
+  margin: 0;
+  text-align: center;
+  border-radius: 1vw;
+  background-color: #FF0080;
+  color: white;
+  font-size: 1vw;
+}
+
+.recommendArticle .recommendArticleContent .recommendArticleContentDetail a h2{
+  position: absolute;
+  font-size: 1vw;
+  top: 58%;
+  text-align: center;
+  width: 100%;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+document_Page
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#documentMain{
+  margin-left: 125px;
+}
+
 #documentTopTitle{
-  padding-bottom: 134px;
+  padding-bottom: 135px;
 }
 
 #documentTopTitle h1{
-  font-size: 66px;
+  font-size: 65px;
 }
 
 .blueLine{
   border: 4px solid #004AAD;
   background-color: #004AAD;
-  width: 1153px;
 }
 
 .documentSubTitle{
@@ -383,28 +624,28 @@ header .list #login a{
 }
 
 .documentSubTitle h1{
-  font-size: 49px;
+  font-size: 40px;
 }
 
 .documentSubTitle p{
-  font-size: 33px;
+  font-size: 28px;
   color: #004AAD;
   margin-bottom: 35px;
-  margin-left: 41px;
+  margin-left: 40px;
   font-weight: bold;
 }
 
 .documentContainer{
-  margin-top: 46px;
+  margin-top: 45px;
   display: flex;
 }
 
 .documentContainer .firstDocument{
-  padding-left: 24px;
+  padding-left: 20px;
 }
 
 .documentContainer .otherDocument{
-  padding-left: 142px;
+  padding-left: 140px;
 }
 
 .documentImage a{
@@ -412,30 +653,25 @@ header .list #login a{
 }
 
 .documentImage img{
-  width: 429px;
-  height: 251px;
+  height: 250px;
   border: 1px solid;
 }
 
 .documentImage p{
   color: #707070;
   margin:0;
-  width: 429px;
   border: 1px solid;
-  height: 138px;
+  height: 140px;
   text-align:center;
   display: table-cell;
   vertical-align: middle;
 }
 
 .displayNextDocument{
-  padding-top: 37px;
+  padding-top: 30px;
   text-align: center;
-  width: 1625px;
-  /* margin-left: 159px; */
-  /* display: table; */
-  height: 68px;
-  margin-bottom: 183px;
+  height: 70px;
+  margin-bottom: 180px;
   cursor: pointer;
   /* IE対応のため下記も追加 */
   cursor: hand;
@@ -446,18 +682,17 @@ header .list #login a{
 }
 
 .displayNextDocument p{
-  font-size: 38px;
-  width: 739px;
+  font-size: 30px;
   color: #FFFFFF;
   background-color: #004AAD;
   border-radius: 45px;
   display: table-cell;
   vertical-align: middle;
-  height: 68px;
+  height: 70px;
 }
 
 #documentSecondDisplay{
-  margin-bottom: 314px;
+  margin-bottom: 315px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -465,44 +700,45 @@ header .list #login a{
     width: 100%;
     margin-left: 0;
   }
+
   #documentTopTitle{
     padding-bottom: 7%;
   }
-  
+
   #documentTopTitle h1{
-    font-size: 3.3000000000000003vw;
+    font-size: 3.3vw;
     margin-left: 3%;
   }
-  
+
   .blueLine{
     border: 0.3vw solid #004AAD;
     background-color: #004AAD;
     width: 100%;
   }
-  
+
   .documentSubTitle{
     display: flex;
     align-items: flex-end;
     margin-left: 3%;
   }
-  
+
   .documentSubTitle h1{
-    font-size: 2.9000000000000004vw;
+    font-size: 2.9vw;
   }
-  
+
   .documentSubTitle p{
     font-size: 1.6vw;
     color: #004AAD;
-    margin-bottom: 2.3000000000000003vw;
+    margin-bottom: 2.3vw;
     margin-left: 2.6vw;
     font-weight: bold;
   }
-  
+
   .documentContainer{
-    margin-top: 3.4000000000000004vw;
+    margin-top: 3.4vw;
     display: block;
   }
-  
+
   .documentContainer .firstDocument{
     display: flex;
     flex-direction: column;
@@ -510,7 +746,7 @@ header .list #login a{
     padding-left: 0;
     margin-bottom: 5%;
   }
-  
+
   .documentContainer .otherDocument{
     padding-left:0%;
     align-items: center;
@@ -518,57 +754,52 @@ header .list #login a{
     display: flex;
     margin-bottom: 5%;
   }
-  
+
   .documentImage a{
     text-decoration:none;
   }
-  
+
   .documentImage img{
-    width: 479px;
-    height: 251px;
+    height: 250px;
     border: 1px solid;
   }
-  
+
   .documentImage p{
     color: #707070;
     margin:0;
-    width: 479px;
     border: 1px solid;
-    height: 138px;
+    height: 140px;
     text-align:center;
     display: table-cell;
     vertical-align: middle;
   }
-  
+
   .displayNextDocument{
     padding-top: 2%;
     text-align: center;
     width: 100%;
-    /* margin-left: 159px; */
-    /* display: table; */
-    height: 68px;
+    height: 70px;
     margin-bottom: 15%;
     cursor: pointer;
     /* IE対応のため下記も追加 */
     cursor: hand;
   }
-  
+
   .displayNextDocument .documentInner{
     display:inline-block;
     width: 70%;
   }
-  
+
   .displayNextDocument p{
-    font-size: 3.8000000000000003vw;
-    width: 739px;
+    font-size: 3.8vw;
     color: #FFFFFF;
     background-color: #004AAD;
     border-radius: 45px;
     display: table-cell;
     vertical-align: middle;
-    height: 68px;
+    height: 70px;
   }
-  
+
   #documentSecondDisplay{
     margin-bottom: 10%;
   }
@@ -579,48 +810,49 @@ header .list #login a{
     width: 100%;
     margin-left: 0;
   }
+
   #documentTopTitle{
     padding-bottom: 7%;
   }
-  
+
   #documentTopTitle h1{
-    font-size: 3.3000000000000003vw;
+    font-size: 3.3vw;
     margin-left: 3%;
   }
-  
+
   .blueLine{
     border: 0.3vw solid #004AAD;
     background-color: #004AAD;
     width: 100%;
   }
-  
+
   .documentSubTitle{
     display: flex;
     align-items: flex-end;
     margin-left: 3%;
   }
-  
+
   .documentSubTitle h1{
-    font-size: 2.9000000000000004vw;
+    font-size: 2.9vw;
   }
-  
+
   .documentSubTitle p{
     font-size: 1.6vw;
     color: #004AAD;
-    margin-bottom: 2.3000000000000003vw;
+    margin-bottom: 2.3vw;
     margin-left: 2.6vw;
     font-weight: bold;
   }
-  
+
   .documentContainer{
-    margin-top: 3.4000000000000004vw;
+    margin-top: 3.4vw;
     display: block;
   }
 
   .documentContainer p{
     font-size: 2.5vw;
   }
-  
+
   .documentContainer .firstDocument{
     display: flex;
     flex-direction: column;
@@ -628,7 +860,7 @@ header .list #login a{
     padding-left: 0;
     margin-bottom: 5%;
   }
-  
+
   .documentContainer .otherDocument{
     padding-left:0%;
     align-items: center;
@@ -636,63 +868,184 @@ header .list #login a{
     display: flex;
     margin-bottom: 5%;
   }
-  
+
   .documentImage a{
     text-decoration:none;
   }
-  
+
   .documentImage img{
-    width: 270px;
     height: 200px;
     border: 1px solid;
   }
-  
+
   .documentImage p{
     color: #707070;
     margin:0;
-    width: 270px;
     border: 1px solid;
     height: 100px;
     text-align:center;
     display: table-cell;
     vertical-align: middle;
   }
-  
+
   .displayNextDocument{
     padding-top: 2%;
     text-align: center;
     width: 100%;
-    /* margin-left: 159px; */
-    /* display: table; */
     height: 68px;
     margin-bottom: 15%;
     cursor: pointer;
     /* IE対応のため下記も追加 */
     cursor: hand;
   }
-  
+
   .displayNextDocument .documentInner{
     display:inline-block;
     width: 70%;
   }
-  
+
   .displayNextDocument p{
-    font-size: 3.8000000000000003vw;
-    width: 739px;
+    font-size: 3.8vw;
     color: #FFFFFF;
     background-color: #004AAD;
     border-radius: 45px;
     display: table-cell;
     vertical-align: middle;
-    height: 68px;
+    height: 70px;
   }
-  
+
   #documentSecondDisplay{
     margin-bottom: 10%;
   }
 }
 
-/* description */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+記事詳細Page
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.articleDetail{
+  width: 100%;
+  display: flex;
+}
+
+.articleDetailMain .detailThumbnail{
+  margin: auto;
+  width: 90%;
+}
+
+.articleDetail .articleDetailMain .detailThumbnail img{
+  width: 90%;
+  height: 30vw;
+  object-fit: cover;
+}
+
+.articleDetailMain{
+  width: 65%;
+}
+
+.articleDetailMain .detailTitle {
+  width: 95%;
+  margin-top: 2vw;
+  margin-left: 0.4vw;
+}
+
+.detailTitle .detailTitleMain .detailTitleName{
+  border: 1px solid #707070;
+  border-radius: 1vw;
+  border-bottom: none;
+}
+
+.detailTitle .detailTitleMain .detailTitleName h1{
+  padding-left: 1.5vw;
+  font-size: 2vw;
+}
+
+.detailTitle .detailTitleMain .detailTitleName .blueLine{
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.sidebarNewArrivalContainer{
+  border: 1px solid #707070;
+  border-top: 1.3vw solid #004AAD;
+  margin-right: 2vw;
+}
+
+.sidebarNewArrivalContainer .sidebarNewArrivalTitle{
+  display: flex;
+  margin-left: 2vw;
+  align-items: center;
+  border-bottom: 0.3vw solid #004AAD;
+  margin-top: 1vw;
+  width: 65%;
+}
+
+.sidebarNewArrivalContainer .sidebarNewArrivalTitle h1{
+  margin: 0;
+  font-size: 2vw;
+}
+
+.sidebarNewArrivalContainer .sidebarNewArrivalTitle h2{
+  padding-left: 1vw;
+  color: #004AAD;
+  margin: 0;
+  font-size: 1.5vw;
+}
+
+.articleDetailSidebar{
+  width: 35%;
+}
+
+.sidebarNewArrivalLink{
+  display: flex;
+  position: relative;
+  margin-bottom: 1vw;
+}
+
+.sidebarNewArrivalLink a{
+  width: 50%;
+  padding-left: 0.6vw;
+}
+
+.sidebarNewArrivalLink a img{
+  width: 100%;
+}
+
+.sidebarNewArrivalLink a p{
+  position: absolute;
+  background-color: white;
+  margin: 0;
+  top: 1.5vw;
+  font-weight: bold;
+  width: 23%;
+  font-size: 0.7vw;
+}
+
+.sidebarNewArrivalLink .sidebarNewArrivalContent{
+  display: table;
+}
+
+.sidebarNewArrivalLink .sidebarNewArrivalContent h3{
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 1vw;
+}
+
+.sidebarNewArrivalContainer.sidebarRecommend{
+  margin-top: 3vw;
+}
+
+.sidebarNewArrivalContainer.sidebarRecommend .sidebarNewArrivalTitle.sidebarRecommendTitle{
+  display: flex;
+  margin-left: 2vw;
+  align-items: center;
+  border-bottom: 0.3vw solid #004AAD;
+  margin-top: 1vw;
+  width: 80%;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+description_Page
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 #descriptionTitle{
   text-align: center;
   margin: auto;
@@ -703,7 +1056,6 @@ header .list #login a{
   border-bottom:solid;
   border-color:#D9FF10;
   border-width:19px;
-  width: 730px;
   margin-bottom: 0;
 }
 
@@ -720,14 +1072,14 @@ header .list #login a{
 
 #descriptionContentInside{
   width: 80%;
-  border: 1px solid #707070; 
+  border: 1px solid #707070;
   border-radius: 45px;
   margin-top: 120px;
   margin-bottom: 120px;
   margin-left: auto;
   margin-right: auto;
   background-color: white;
-  font-size: 17px;
+  font-size: 16px;
   color: #707070;
 }
 
@@ -747,7 +1099,7 @@ table{
     text-align: center;
     margin: auto;
   }
-  
+
   #descriptionTitle h1{
     font-size: 3.6vw;
     border-bottom:solid;
@@ -756,21 +1108,21 @@ table{
     width: 100%;
     margin-bottom: 0;
   }
-  
+
   #descriptionTitle h2{
     margin: 0;
     font-size: 1.3vw;
     color: #004AAD;
   }
-  
+
   #descriptionContentOutside{
     margin-top: 50px;
     background: linear-gradient(180deg, #004AAD 0%, #004AAD 50%, white 50%, white 100%);
   }
-  
+
   #descriptionContentInside{
     width: 80%;
-    border: 1px solid #707070; 
+    border: 1px solid #707070;
     border-radius: 4.5vw;
     margin-top: 10%;
     margin-bottom: 10%;
@@ -780,14 +1132,14 @@ table{
     font-size: 17px;
     color: #707070;
   }
-  
+
   table{
     margin-top: 6%;
     margin-bottom: 6%;
     margin-left: auto;
     margin-right: auto;
   }
-  
+
   .tableLeft {
     background-color: #F6F6F6;
     font-size: 1.8vw;
@@ -799,56 +1151,57 @@ table{
     text-align: center;
     margin: auto;
   }
-  
+
   #descriptionTitle h1{
     font-size: 3.6vw;
     border-bottom:solid;
     border-color:#D9FF10;
     border-width:0.9vw;
-    width: 63%;
+    width: 60%;
     margin-bottom: 0;
     margin: auto;
   }
-  
+
   #descriptionTitle h2{
     margin: 0;
     font-size: 1.1vw;
     color: #004AAD;
   }
-  
+
   #descriptionContentOutside{
     margin-top: 50px;
     background: linear-gradient(180deg, #004AAD 0%, #004AAD 50%, white 50%, white 100%);
   }
-  
+
   #descriptionContentInside{
     width: 80%;
-    border: 1px solid #707070; 
+    border: 1px solid #707070;
     border-radius: 4.5vw;
     margin-top: 10%;
     margin-bottom: 10%;
     margin-left: auto;
     margin-right: auto;
     background-color: white;
-    font-size: 17px;
+    font-size: 16px;
     color: #707070;
   }
-  
+
   table{
     margin-top: 6%;
     margin-bottom: 6%;
     margin-left: auto;
     margin-right: auto;
   }
-  
+
   .tableLeft {
     background-color: #F6F6F6;
     font-size: 1.8vw;
   }
 }
 
-
-/* terms */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+terms_Page
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 #termTitle{
   text-align: center;
   margin: auto;
@@ -858,14 +1211,13 @@ table{
   font-size: 80px;
   border-bottom:solid;
   border-color:#D9FF10;
-  border-width:19px;
-  width: 330px;
+  border-width:20px;
   margin-bottom: 0;
 }
 
 #termTitle h2{
   margin: 0;
-  font-size: 33px;
+  font-size: 32px;
   color: #004AAD;
 }
 
@@ -876,7 +1228,7 @@ table{
 
 #termContentInside{
   width: 80%;
-  border: 1px solid #707070; 
+  border: 1px solid #707070;
   border-radius: 45px;
   margin-top: 120px;
   margin-bottom: 120px;
@@ -896,7 +1248,7 @@ table{
     text-align: center;
     margin: auto;
   }
-  
+
   #termTitle h1{
     margin: auto;
     font-size: 3.6vw;
@@ -906,31 +1258,31 @@ table{
     width: 100%;
     margin-bottom: 0;
   }
-  
+
   #termTitle h2{
     margin: 0;
     font-size: 2vw;
     color: #004AAD;
   }
-  
+
   #termContentOutside{
     margin-top: 50px;
     background: linear-gradient(180deg, #004AAD 0%, #004AAD 10%, white 10%, white 100%);
   }
-  
+
   #termContentInside{
     width: 80%;
-    border: 1px solid #707070; 
+    border: 1px solid #707070;
     border-radius: 45px;
     margin-top: 120px;
     margin-bottom: 120px;
     margin-left: auto;
     margin-right: auto;
     background-color: white;
-    font-size: 17px;
+    font-size: 16px;
     color: #707070;
   }
-  
+
   #termContentInside div{
     padding-left: 25px;
   }
@@ -941,7 +1293,7 @@ table{
     text-align: center;
     margin: auto;
   }
-  
+
   #termTitle h1{
     margin: auto;
     font-size: 3.6vw;
@@ -951,21 +1303,21 @@ table{
     width: 100%;
     margin-bottom: 0;
   }
-  
+
   #termTitle h2{
     margin: 0;
     font-size: 2vw;
     color: #004AAD;
   }
-  
+
   #termContentOutside{
     margin-top: 6%;
     background: linear-gradient(180deg, #004AAD 0%, #004AAD 10%, white 10%, white 100%);
   }
-  
+
   #termContentInside{
     width: 80%;
-    border: 1px solid #707070; 
+    border: 1px solid #707070;
     border-radius: 45px;
     margin-top: 120px;
     margin-bottom: 120px;
@@ -975,35 +1327,35 @@ table{
     font-size: 2vw;
     color: #707070;
   }
-  
+
   #termContentInside div{
     padding-left: 5%;
   }
 
-  /* #termContentInside h2 {
-    font-size: 4vw;
-  } */
+  #termContentInside h2 {
+    font-size: 1vw;
+  }
 }
 
-/* policy */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+policy_Page
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 #policyTitle{
   text-align: center;
   margin: auto;
 }
 
 #policyTitle h1{
-  font-size: 88px;
+  font-size: 48px;
   border-bottom:solid;
   border-color:#D9FF10;
-  border-width:19px;
-  width: 896px;
+  border-width:20px;
   margin-bottom: 0;
 }
 
 #policyTitle h2{
-  width: 250px;
   margin: auto;
-  font-size: 33px;
+  font-size: 32px;
   color: #004AAD;
 }
 
@@ -1018,9 +1370,8 @@ table{
   margin-left: auto;
   margin-right: auto;
   background-color: white;
-  font-size: 41px;
-  width: 1610px;
-  border: 1px solid #707070; 
+  font-size: 20px;
+  border: 1px solid #707070;
   border-radius: 45px;
   color: #707070;
 }
@@ -1034,7 +1385,7 @@ table{
     text-align: center;
     margin: auto;
   }
-  
+
   #policyTitle h1{
     font-size: 3.6vw;
     border-bottom:solid;
@@ -1043,20 +1394,20 @@ table{
     width: 100%;
     margin-bottom: 0;
   }
-  
+
   #policyTitle h2{
     width: 19vw;
     margin: auto;
     font-size: 1.9vw;
     color: #004AAD;
   }
-  
+
   #policyContentOutside{
     width: 100%;
     margin-top: 5%;
     background: linear-gradient(180deg, #004AAD 0%, #004AAD 10%, white 10%, white 100%);
   }
-  
+
   #policyContentInside{
     margin-top: 120px;
     margin-bottom: 120px;
@@ -1065,71 +1416,66 @@ table{
     background-color: white;
     font-size: 2vw;
     width: 80%;
-    border: 1px solid #707070; 
+    border: 1px solid #707070;
     border-radius: 4.5vw;
     color: #707070;
   }
-  
+
   #policyContentInside p{
     padding-left: 4%;
   }
 }
 
-/* download */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+download_Page
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .docDownloadTitle{
   text-align: center;
   margin: auto;
+  width: 31%;
 }
 
 .docDownloadTitle h1{
-  font-size: 72px;
+  font-size: 2.5vw;
   border-bottom:solid;
   border-color:#D9FF10;
-  border-width:19px;
-  width: 871px;
+  border-width:1vw;
   margin-bottom: 0;
   margin: auto;
 }
 
 .docDownloadTitle h2{
-  width: 380px;
   margin: auto;
-  font-size: 33px;
+  font-size: 1.5vw;
   color: #004AAD;
 }
 
 .docDownloadLeft{
   display: flex;
-  padding-top: 64px;
-  padding-bottom: 117px;
+  padding-top: 5.5vw;
+  padding-bottom: 12vw;
+  width: 100%;
 }
 
 .docDownloadContainer{
-  margin-left: 71px;
-}
-
-.docDownloadImage {
-  color: #707070;
-  margin:0;
-  width: 909px;
-  height: 415px;
+  margin-left: 3vw;
+  width: 50%;
 }
 
 .docDownloadImage img{
-  height: 415px;
-  width: 909px;
-  border: 1px solid #707070;
-  border-radius: 20px;
+  height: 35vw;
+  border: 0.1vw solid #707070;
+  border-radius: 1.5vw;
+  width: 100%;
 }
 
 .docDownloadDescription{
-  width: 909px;
-  height: 448px;
-  border: 1px solid #707070;
-  border-radius: 20px;
+  border: 0.1vw solid #707070;
+  border-radius: 1.5vw;
   text-align: center;
   vertical-align: middle;
   display: table-cell;
+  width: 50%;
 }
 
 .docDownloadDescription .docDownloadDescriptionInline{
@@ -1138,26 +1484,22 @@ table{
 }
 
 .docDownloadDescription .docDownloadDescriptionInline h2{
-  padding-top: 10px;
-  font-size: 28px;
+  padding-top: 1vw;
+  font-size: 1.7vw;
   margin: 0;
 }
 
 .docDownloadDescription .docDownloadDescriptionInline p{
-  font-size: 20px;
+  font-size: 1.2vw;
   font-weight: bold;
 }
 
 .docDownloadButton{
-  padding-top: 37px;
+  padding-top: 3vw;
   text-align: center;
-  width: 885.81px;
-  /* height: 863px; */
-  /* margin-left: 159px; */
-  /* display: table; */
-  margin-left: 15px;
-  border: 1px solid #707070;
-  border-radius: 52px;
+  margin-left: 1vw;
+  border: 0.1vw solid #707070;
+  border-radius: 1.5vw;
   padding-bottom: 5%;
 }
 
@@ -1169,102 +1511,179 @@ table{
 }
 
 .docDownloadButton p{
-  font-size: 28px;
-  width: 470px;
+  font-size: 1.5vw;
   color: #FFFFFF;
   background-color: #004AAD;
-  border-radius: 55px;
+  border-radius: 1.5vw;
   display: table-cell;
   vertical-align: middle;
-  height: 68px;
+  height: 4vw;
+  text-align: center;
+  width: 90%;
 }
 
 .nonMemberDocDownloadButton{
-  padding-top: 37px;
+  padding-top: 3vw;
   text-align: center;
-  width: 885.81px;
-  /* height: 863px; */
-  /* margin-left: 159px; */
-  /* display: table; */
-  margin-left: 15px;
-  border: 1px solid #707070;
-  border-radius: 52px;
+  margin-left: 1vw;
+  border: 0.1vw solid #707070;
+  border-radius: 1.5vw;
   padding-bottom: 5%;
 }
 
 .nonMemberDocDownloadButton .nonMemberDocDownloadButtonInner{
   display:inline-block;
+  width: 60%;
+  margin-bottom: 2vw;
+}
+
+.nonMemberDocDownloadButton .nonMemberDocDownloadButtonInner a{
+  text-decoration: none;
 }
 
 .nonMemberDocDownloadButton p{
-  font-size: 28px;
-  width: 470px;
+  font-size: 1.5vw;
   color: #FFFFFF;
   background-color: #004AAD;
-  border-radius: 55px;
+  border-radius: 5vw;
   display: table-cell;
   vertical-align: middle;
-  height: 68px;
+  height: 4vw;
+  text-align: center;
+  width: 90%;
 }
 
-#wpmem_login legend, #wpmem_reg legend {
-  display: none;
+.nonMemberRegister .member_register {
+  background: none;
+  padding-top: 2vw;
+  margin-bottom: 6vw;
 }
 
-.register_description {
-  text-align: left;
-  width: 748px;
+.nonMemberRegister .member_register form fieldset {
+  background-color: white;
+  width: 90%;
+  margin: 0 auto;
+  border: none;
+}
+
+.nonMemberRegister .member_register form fieldset .member_area {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 1.5vw;
+}
+
+.nonMemberRegister .member_register form fieldset .member_area h2{
+  width: 30%;
+  text-align: right;
+  font-size: 1.3vw;
+}
+
+.nonMemberRegister .member_register form fieldset .member_area h2#member_password_confirm{
+  font-size: 0.9vw;
+}
+
+.nonMemberRegister .member_register form fieldset .register_required_display{
+  width: 15%;
+  text-align: center;
+}
+
+.nonMemberRegister .member_register form fieldset .register_required_display li{
+  font-size: 0.9vw;
+  color: #FFFFFF;
+  background-color: #FF0000;
+  border-radius: 2vw;
+  vertical-align: middle;
+  width: 58%;
+  margin: 0 auto;
+}
+
+.nonMemberRegister .member_register form fieldset .member_area input{
+  width: 30vw;
+  height: 3vw;
+  padding: 0.4vw;
+  font-size: 1.4vw;
+}
+
+.nonMemberRegister .member_register form fieldset #member_agree{
+  display: flex;
+  width: 34%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 6vw;
+  font-size: 1.3vw;
+}
+
+.nonMemberRegister .member_register form fieldset #member_agree a{
+  text-decoration: none;
+}
+
+.nonMemberRegister .member_register form fieldset .button_div{
+  padding-top: 1.1vw;
+  text-align: center;
+  width: 82%;
+  margin: auto;
+  border: 0.1vw solid #707070;
+  border-radius: 5vw;
+  padding-bottom: 1.1vw;
+  background-color: #004AAD;
+  margin-top: 2.5vw;
+  margin-bottom: 2.5vw;
+}
+
+.nonMemberRegister .member_register form fieldset .button_div #button_inner_div{
+  display:inline-block;
+  cursor: pointer;
+}
+
+.nonMemberRegister .member_register form fieldset .button_div #button_inner_div input{
+  border: none;
+  background-color: #004AAD;
+  color: white;
+  font-size: 1.4vw !important;
+  cursor: pointer;
+}
+
+.nonMemberRegister .wpmem_msg {
+  margin: 0 auto;
+  margin-bottom: 3vw;
+}
+
+.nonMemberRegister #wpmem_msg, .wpmem_msg{
+  padding: 0 !important;
+}
+
+.alreadyMemberLogin {
+  width: 80%;
+}
+
+.alreadyMemberLogin h3{
+  font-size: 0.9vw;
+}
+
+.alreadyMemberLoginButton{
+  width: 60%;
   margin: auto;
 }
 
-.my-row-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.alreadyMemberLoginButton p{
+  font-size: 1.5vw;
+  color: #FFFFFF;
+  background-color: #004AAD;
+  border-radius: 5vw;
+  display: table-cell;
+  vertical-align: middle;
+  height: 4vw;
+  text-align: center;
+  width: 45%;
 }
 
-.my-row-wrapper label.text {
-  width: 340px;
-  font-weight: bold;
-  text-align: right;
-  font-size: 35px;
+.alreadyMemberLoginButton p a{
+  text-decoration: none;
+  color: white;
 }
 
-.div_text input#username.textbox {
-  width: 450px;
-}
-
-.div_text input#company_name.textbox {
-  width: 450px;
-}
-
-.div_text input#user_email.textbox {
-  width: 450px;
-}
-
-.div_text input#position_name.textbox {
-  width: 450px;
-}
-
-.div_text input#billing_phone.textbox {
-  width: 450px;
-}
-
-.div_text input#user_password.textbox {
-  width: 450px;
-}
-
-.div_text input#user_password_confirm.textbox {
-  width: 450px;
-}
-
-/* #wpmem_reg .req {
-  display: none;
-} */
-
-/* .downloadButton {
-
-} */
 
 @media screen and (max-width: 1024px) {
   .docDownloadMain {
@@ -1276,49 +1695,49 @@ table{
     text-align: center;
     margin: auto;
   }
-  
+
   .docDownloadTitle h1{
     font-size: 3.6vw;
     border-bottom:solid;
     border-color:#D9FF10;
     border-width:0.9vw;
-    width: 44%;
+    width: 45%;
     margin-bottom: 0;
     margin: auto;
   }
-  
+
   .docDownloadTitle h2{
     width: 19vw;
     margin: auto;
     font-size: 1.6vw;
     color: #004AAD;
   }
-  
+
   .docDownloadLeft{
     width: 100%;
     display: flex;
-    padding-top: 64px;
-    padding-bottom: 117px;
+    padding-top: 65px;
+    padding-bottom: 120px;
   }
-  
+
   .docDownloadContainer{
     margin-left: 2%;
   }
-  
+
   .docDownloadImage {
     color: #707070;
     margin:0;
     width: 50%;
     height: 415px;
   }
-  
+
   .docDownloadImage img{
     height: 100%;
     width: 200%;
     border: 1px solid #707070;
     border-radius: 20px;
   }
-  
+
   .docDownloadDescription{
     width: 2%;
     height: 100%;
@@ -1328,48 +1747,43 @@ table{
     vertical-align: middle;
     display: table-cell;
   }
-  
+
   .docDownloadDescription .docDownloadDescriptionInline{
     display: inline-block;
     text-align: left;
   }
-  
+
   .docDownloadDescription .docDownloadDescriptionInline h2{
-    font-size: 1.7000000000000001vw;
+    font-size: 1.7vw;
     margin: 0;
   }
-  
+
   .docDownloadDescription .docDownloadDescriptionInline p{
     font-size: 1.5vw;
     font-weight: bold;
   }
-  
+
   .docDownloadButton{
-    padding-top: 37px;
+    padding-top: 40px;
     text-align: center;
-    width: 885.81px;
-    /* height: 863px; */
-    /* margin-left: 159px; */
-    /* display: table; */
     margin-left: 15px;
     border: 1px solid #707070;
-    border-radius: 52px;
+    border-radius: 50px;
   }
-  
+
   .docDownloadButton .docDownloadButtonInner{
     display:inline-block;
     width: 70%;
   }
-  
+
   .docDownloadButton p{
     font-size: 2vw;
-    width: 406px;
     color: #FFFFFF;
     background-color: #004AAD;
     border-radius: 55px;
     display: table-cell;
     vertical-align: middle;
-    height: 68px;
+    height: 70px;
   }
 }
 
@@ -1383,49 +1797,49 @@ table{
     text-align: center;
     margin: auto;
   }
-  
+
   .docDownloadTitle h1{
     font-size: 3.6vw;
     border-bottom:solid;
     border-color:#D9FF10;
     border-width:0.9vw;
-    width: 44%;
+    width: 45%;
     margin-bottom: 0;
     margin: auto;
   }
-  
+
   .docDownloadTitle h2{
     width: 19vw;
     margin: auto;
     font-size: 1.6vw;
     color: #004AAD;
   }
-  
+
   .docDownloadLeft{
     width: 100%;
     display: flex;
     padding-top: 5%;
     padding-bottom: 7%;
   }
-  
+
   .docDownloadContainer{
     margin-left: 2%;
   }
-  
+
   .docDownloadImage {
     color: #707070;
     margin:0;
     width: 50%;
     height: 200px;
   }
-  
+
   .docDownloadImage img{
     height: 100%;
     width: 200%;
     border: 1px solid #707070;
     border-radius: 8px;
   }
-  
+
   .docDownloadDescription{
     width: 2%;
     height: 100%;
@@ -1435,80 +1849,631 @@ table{
     vertical-align: middle;
     display: table-cell;
   }
-  
+
   .docDownloadDescription .docDownloadDescriptionInline{
     display: inline-block;
     text-align: left;
   }
-  
+
   .docDownloadDescription .docDownloadDescriptionInline h2{
-    font-size: 1.7000000000000001vw;
+    font-size: 1.7vw;
     margin: 0;
   }
-  
+
   .docDownloadDescription .docDownloadDescriptionInline p{
     font-size: 1.5vw;
     font-weight: bold;
   }
-  
+
   .docDownloadButton{
-    padding-top: 37px;
+    padding-top: 40px;
     text-align: center;
-    width: 885.81px;
-    /* height: 863px; */
-    /* margin-left: 159px; */
-    /* display: table; */
     margin-left: 1%;
     border: 1px solid #707070;
     border-radius: 8px;
   }
-  
+
   .docDownloadButton .docDownloadButtonInner{
     display:inline-block;
     width: 70%;
   }
-  
+
   .docDownloadButton p{
     font-size: 2vw;
-    width: 406px;
     color: #FFFFFF;
     background-color: #004AAD;
     border-radius: 55px;
     display: table-cell;
     vertical-align: middle;
-    height: 68px;
+    height: 70px;
   }
 }
 
-/* footer */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+login
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#loginTitle{
+  text-align: center;
+  margin: auto;
+  margin-bottom: 3vw;
+}
+
+#loginTitle h1{
+  font-size: 3vw;
+  border-bottom:solid;
+  border-color:#D9FF10;
+  border-width: 0.7vw;
+  width: 15vw;
+  margin-bottom: 0;
+}
+
+#loginTitle h2{
+  width: 15vw;
+  margin: auto;
+  font-size: 1.4vw;
+  color: #004AAD;
+}
+
+#wpmem_login .my_form{
+  background: linear-gradient(to top, #fff 0%, #fff 10%, #004AAD 10%,  #004AAD 100%);
+  padding-top: 2vw;
+  margin-bottom: 6vw;
+}
+
+#wpmem_login .my_form #login_fieldset {
+  border: 0.1vw solid #707070;
+  padding: 2vw;
+  width: 72%;
+  margin: auto;
+  border-radius: 1.5vw;
+  background-color: #fff;
+}
+
+#wpmem_login .my_form #login_fieldset .message_area{
+  margin: auto;
+  text-align: center;
+  margin-bottom: 2.5vw;
+}
+
+#wpmem_login .my_form #login_fieldset .message_area{
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: #FD0000;
+}
+
+#wpmem_login .my_form #login_fieldset .login_mail {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  align-items: center;
+}
+
+#wpmem_login .my_form #login_fieldset .login_mail label{
+  width: 30%;
+  font-weight: bold;
+  font-size: 1.3vw;
+}
+
+#wpmem_login .my_form #login_fieldset .login_mail input{
+  width: 60%;
+  height: 4vw;
+}
+
+#wpmem_login .my_form #login_fieldset .login_pass {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  align-items: center;
+  margin-top: 3vw;
+}
+
+#wpmem_login .my_form #login_fieldset .login_pass label{
+  width: 30%;
+  font-weight: bold;
+  font-size: 1.3vw;
+}
+
+#wpmem_login .my_form #login_fieldset .login_pass input{
+  width: 60%;
+  height: 4vw;
+}
+
+#wpmem_login button, #wpmem_login input, #wpmem_reg button, #wpmem_reg input, #wpmem_reg select, #wpmem_reg textarea {
+  font-size: 120% !important;
+}
+
+#wpmem_login .my_form #login_fieldset .my_btn_area{
+  padding-top: 1.1vw;
+  text-align: center;
+  width: 30%;
+  margin: auto;
+  border: 0.1vw solid #707070;
+  border-radius: 5vw;
+  padding-bottom: 1.1vw;
+  background-color: #004AAD;
+  margin-top: 2.5vw;
+}
+
+#wpmem_login .my_form #login_fieldset .my_btn_area .my_btn_inner_area{
+  display:inline-block;
+  cursor: pointer;
+}
+
+#wpmem_login .my_form #login_fieldset .my_btn_area button.my_submit_btn{
+  border: none;
+  background-color: #004AAD;
+  color: white;
+  font-size: 1.4vw !important;
+  cursor: pointer;
+}
+
+#wpmem_login .my_form #login_fieldset .forget_pass{
+  width: 30%;
+  margin: auto;
+  text-align: center;
+  margin-top: 1vw;
+}
+
+#wpmem_login .my_form #login_fieldset .forget_pass a{
+  text-decoration: none;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+register
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#registerTitle{
+  text-align: center;
+  margin: auto;
+  margin-bottom: 3vw;
+}
+
+#registerTitle h1{
+  font-size: 3vw;
+  border-bottom:solid;
+  border-color:#D9FF10;
+  border-width: 0.7vw;
+  width: 20vw;
+  margin-bottom: 0;
+}
+
+#registerTitle h2{
+  width: 17vw;
+  margin: auto;
+  font-size: 1.2vw;
+  color: #004AAD;
+}
+
+.member_register {
+  background: linear-gradient(to top, #fff 0%, #fff 50%, #004AAD 50%,  #004AAD 100%);
+  padding-top: 2vw;
+  margin-bottom: 6vw;
+}
+
+.member_register form fieldset {
+  background-color: white;
+  width: 80%;
+  margin: 0 auto;
+  border: 0.1vw solid #707070;
+  border-radius: 1.5vw;
+}
+
+.member_register form fieldset .member_area {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 1.5vw;
+}
+
+.member_register form fieldset .member_area h2{
+  width: 20%;
+  text-align: right;
+}
+
+.member_register form fieldset .register_required_display{
+  width: 15%;
+  text-align: center;
+}
+
+.member_register form fieldset .register_required_display li{
+  font-size: 0.7vw;
+  color: #FFFFFF;
+  background-color: #FF0000;
+  border-radius: 2vw;
+  vertical-align: middle;
+  width: 30%;
+  margin: 0 auto;
+}
+
+.member_register form fieldset .member_area input{
+  width: 30vw;
+  height: 3vw;
+  padding: 0.4vw;
+  font-size: 1.4vw;
+}
+
+.member_register form fieldset #member_agree{
+  display: flex;
+  width: 34%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 6vw;
+  font-size: 1.3vw;
+}
+
+.member_register form fieldset #member_agree a{
+  text-decoration: none;
+}
+
+.member_register form fieldset .button_div{
+  padding-top: 1.1vw;
+  text-align: center;
+  width: 30%;
+  margin: auto;
+  border: 0.1vw solid #707070;
+  border-radius: 5vw;
+  padding-bottom: 1.1vw;
+  background-color: #004AAD;
+  margin-top: 2.5vw;
+  margin-bottom: 2.5vw;
+}
+
+.member_register form fieldset .button_div #button_inner_div{
+  display:inline-block;
+  cursor: pointer;
+}
+
+.member_register form fieldset .button_div #button_inner_div input{
+  border: none;
+  background-color: #004AAD;
+  color: white;
+  font-size: 1.4vw !important;
+  cursor: pointer;
+}
+
+.wpmem_msg {
+  margin: 0 auto;
+  margin-bottom: 3vw;
+}
+
+#wpmem_msg, .wpmem_msg{
+  padding: 0 !important;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+register_complete
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#registerCompleteTitle{
+  text-align: center;
+  margin: auto;
+  margin-bottom: 3vw;
+}
+
+#registerCompleteTitle h1{
+  font-size: 3vw;
+  border-bottom:solid;
+  border-color:#D9FF10;
+  border-width: 0.7vw;
+  width: 20vw;
+  margin-bottom: 0;
+}
+
+#registerCompleteTitle h2{
+  width: 20vw;
+  margin: auto;
+  font-size: 1vw;
+  color: #004AAD;
+}
+
+.member_register_complete {
+  background: linear-gradient(to top, #fff 0%, #fff 10%, #004AAD 10%,  #004AAD 100%);
+  padding-top: 2vw;
+  margin-bottom: 6vw;
+}
+
+.member_register_complete .member_register_complete_inner{
+  background-color: white;
+  width: 80%;
+  margin: 0 auto;
+  border: 0.1vw solid #707070;
+  border-radius: 1.5vw;
+  padding: 3vw;
+}
+
+.member_register_complete .member_register_complete_inner h2{
+  margin-left: 10vw;
+  margin-bottom: 4vw;
+}
+
+.member_register_complete .register_complete_button {
+  margin-left: 10vw;
+  margin-bottom: 4vw;
+}
+
+.member_register_complete .register_complete_button{
+  padding-top: 1.1vw;
+  text-align: center;
+  width: 30%;
+  margin: auto;
+  border: 0.1vw solid #707070;
+  border-radius: 5vw;
+  padding-bottom: 1.1vw;
+  background-color: #004AAD;
+  margin-top: 10.5vw;
+  margin-bottom: 2.5vw;
+}
+
+.member_register_complete .register_complete_button #register_complete_inner_button{
+  display:inline-block;
+  cursor: pointer;
+}
+
+.member_register_complete .register_complete_button #register_complete_inner_button a{
+  border: none;
+  background-color: #004AAD;
+  color: white;
+  font-size: 1.4vw !important;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+password_reset
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#paswordResetTitle{
+  text-align: center;
+  margin: auto;
+  margin-bottom: 3vw;
+}
+
+#paswordResetTitle h1{
+  font-size: 3vw;
+  border-bottom:solid;
+  border-color:#D9FF10;
+  border-width: 0.7vw;
+  width: 30vw;
+  margin-bottom: 0;
+}
+
+#paswordResetTitle h2{
+  width: 20vw;
+  margin: auto;
+  font-size: 1vw;
+  color: #004AAD;
+}
+
+#wpmem_login #wpmem_pwdreset_form{
+  background: linear-gradient(to top, #fff 0%, #fff 10%, #004AAD 10%,  #004AAD 100%);
+  padding-top: 2vw;
+  margin-bottom: 6vw;
+}
+
+#wpmem_login #wpmem_pwdreset_form #pass_reset_fieldset {
+  border: 0.1vw solid #707070;
+  padding: 2vw;
+  width: 72%;
+  margin: auto;
+  border-radius: 1.5vw;
+  background-color: #fff;
+}
+
+#wpmem_login #wpmem_pwdreset_form #pass_reset_fieldset .pass_reset_title_inner{
+  font-size: 2vw;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 2.5vw;
+}
+
+#wpmem_login #wpmem_pwdreset_form #pass_reset_fieldset .reset_user_name{
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 80%;
+  margin-bottom: 3vw;
+}
+
+#wpmem_login #wpmem_pwdreset_form #pass_reset_fieldset .reset_user_name label{
+  font-size: 1.5vw;
+  margin-right: 3vw;
+  width: 20%;
+}
+
+#wpmem_login #wpmem_pwdreset_form #pass_reset_fieldset .reset_user_name .div_text{
+  margin: 0;
+  font-size: 1.2vw;
+}
+
+#wpmem_login #wpmem_pwdreset_form #pass_reset_fieldset .reset_user_name .div_text input{
+  height: 3vw;
+}
+
+#wpmem_login #wpmem_pwdreset_form #pass_reset_fieldset .reset_user_mail{
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 80%;
+  margin-bottom: 3vw;
+}
+
+#wpmem_login #wpmem_pwdreset_form #pass_reset_fieldset .reset_user_mail label{
+  font-size: 1.5vw;
+  margin-right: 3vw;
+  width: 20%;
+}
+
+#wpmem_login #wpmem_pwdreset_form #pass_reset_fieldset .reset_user_mail .div_text{
+  margin: 0;
+  font-size: 1.2vw;
+}
+
+#wpmem_login #wpmem_pwdreset_form #pass_reset_fieldset .reset_user_mail .div_text input{
+  height: 3vw;
+}
+
+
+
+#wpmem_login #wpmem_pwdreset_form #pass_reset_fieldset .login_mail {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  align-items: center;
+}
+
+#wpmem_login #wpmem_pwdreset_form #pass_reset_fieldset .button_div {
+  padding-top: 1.1vw;
+  text-align: center;
+  width: 30%;
+  margin: auto;
+  border: 0.1vw solid #707070;
+  border-radius: 5vw;
+  padding-bottom: 1.1vw;
+  background-color: #004AAD;
+  margin-top: 2.5vw;
+}
+
+#wpmem_login #wpmem_pwdreset_form #pass_reset_fieldset .button_div .btn_inner_area {
+  display:inline-block;
+  cursor: pointer;
+}
+
+#wpmem_login #wpmem_pwdreset_form #pass_reset_fieldset .button_div button.buttons {
+  border: none;
+  background-color: #004AAD;
+  color: white;
+  font-size: 1.4vw !important;
+  cursor: pointer;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+change_password
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#wpmem_login #wpmem_pwdchange_form{
+  background: linear-gradient(to top, #fff 0%, #fff 10%, #004AAD 10%,  #004AAD 100%);
+  padding-top: 2vw;
+  margin-bottom: 6vw;
+}
+
+#wpmem_login #wpmem_pwdchange_form #pass_change_fieldset{
+  border: 0.1vw solid #707070;
+  padding: 2vw;
+  width: 72%;
+  margin: auto;
+  border-radius: 1.5vw;
+  background-color: #fff;
+}
+
+#wpmem_login #wpmem_pwdchange_form #pass_change_fieldset .pass_change_title_inner{
+  font-size: 2vw;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 2.5vw;
+}
+
+#wpmem_login #wpmem_pwdchange_form #pass_change_fieldset .new_password{
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 80%;
+  margin-bottom: 3vw;
+}
+
+#wpmem_login #wpmem_pwdchange_form #pass_change_fieldset .new_password label{
+  font-size: 1.5vw;
+  margin-right: 3vw;
+  width: 30%;
+}
+
+#wpmem_login #wpmem_pwdchange_form #pass_change_fieldset .new_password .div_text{
+  margin: 0;
+  font-size: 1.2vw;
+}
+
+#wpmem_login #wpmem_pwdchange_form #pass_change_fieldset .new_password .div_text input{
+  height: 3vw;
+}
+
+#wpmem_login #wpmem_pwdchange_form #pass_change_fieldset .new_password_again{
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 80%;
+  margin-bottom: 3vw;
+}
+
+#wpmem_login #wpmem_pwdchange_form #pass_change_fieldset .new_password_again label{
+  font-size: 1.3vw;
+  margin-right: 3vw;
+  width: 30%;
+}
+
+#wpmem_login #wpmem_pwdchange_form #pass_change_fieldset .new_password_again .div_text{
+  margin: 0;
+  font-size: 1.2vw;
+}
+
+#wpmem_login #wpmem_pwdchange_form #pass_change_fieldset .new_password_again .div_text input{
+  height: 3vw;
+}
+
+#wpmem_login #wpmem_pwdchange_form #pass_change_fieldset .button_div {
+  padding-top: 1.1vw;
+  text-align: center;
+  width: 30%;
+  margin: auto;
+  border: 0.1vw solid #707070;
+  border-radius: 5vw;
+  padding-bottom: 1.1vw;
+  background-color: #004AAD;
+  margin-top: 2.5vw;
+}
+
+#wpmem_login #wpmem_pwdchange_form #pass_change_fieldset .button_div .btn_inner_area {
+  display:inline-block;
+  cursor: pointer;
+}
+
+#wpmem_login #wpmem_pwdchange_form #pass_change_fieldset .button_div button.buttons {
+  border: none;
+  background-color: #004AAD;
+  color: white;
+  font-size: 1.4vw !important;
+  cursor: pointer;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+footer
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 footer{
   background-color:#004AAD ;
   min-height: 100vh;
   position: relative;/*←相対位置*/
-  /* height: 654px; */
-  width: 1920px;
 }
 
 footer .container{
   width: 100%;
   text-align: center;
-  padding-top: 227px;
+  padding-top: 200px;
   position: absolute;
 }
 
 footer .container p{
-  font-size: 39px;
+  font-size: 24px;
   color: white;
 }
 
 footer .container a img{
-  padding-right: 27px;
-  width: 67px;
-  height: 69px;
+  padding-right: 30px;
+  height: 70px;
 }
 
 footer #relation{
-  padding-top: 49px;
+  padding-top: 40px;
   position: relative;
 }
 
@@ -1518,11 +2483,11 @@ footer #list{
 
 footer #list li{
   font-weight: bold;
-  padding-bottom: 62px;
+  padding-bottom: 60px;
 }
 
 footer #list li a{
-  font-size: 33px;
+  font-size: 24px;
   color: white;
   text-decoration:none;
 }
@@ -1533,56 +2498,52 @@ footer #writing{
   color: white;
 }
 
-/* border-radius: 0;
-border: 2px solid #fafafa; */
-
 @media screen and (max-width: 1024px) {
   footer{
     background-color:#004AAD ;
     min-height: 100vh;
     position: relative;/*←相対位置*/
-    /* height: 654px; */
     width: 100%;
   }
-  
+
   footer .container{
     width: 100%;
     text-align: center;
-    padding-top: 11%;
+    padding-top: 10%;
     position: absolute;
   }
-  
+
   footer .container p{
     font-size: 1.8vw;
     color: white;
   }
-  
+
   footer .container a img{
     padding-right: 3%;
     width: 6%;
     height: auto;
   }
-  
+
   footer #relation{
     padding-top: 5%;
     position: relative;
   }
-  
+
   footer #list{
     padding-left: 80%;
   }
-  
+
   footer #list li{
     font-weight: bold;
     padding-bottom: 10%;
   }
-  
+
   footer #list li a{
     font-size: 1.5vw;
     color: white;
     text-decoration:none;
   }
-  
+
   footer #writing{
     font-size: 1.5vw;
     text-align: center;
@@ -1596,49 +2557,48 @@ border: 2px solid #fafafa; */
     background-color:#004AAD ;
     min-height: 60vh;
     position: relative;/*←相対位置*/
-    /* height: 654px; */
     width: 100%;
   }
-  
+
   footer .container{
     width: 100%;
     text-align: center;
     padding-top: 10%;
     position: absolute;
   }
-  
+
   footer .container p{
     font-size: 1.8vw;
     color: white;
   }
-  
+
   footer .container a img{
     padding-right: 3%;
     width: 6%;
     height: auto;
   }
-  
+
   footer #relation{
     padding-top: 0;
     position: relative;
   }
-  
+
   footer #list{
     width: 35%;
     padding-left: 75%;
   }
-  
+
   footer #list li{
     font-weight: bold;
     padding-bottom: 2%;
   }
-  
+
   footer #list li a{
     font-size: 1.5vw;
     color: white;
     text-decoration:none;
   }
-  
+
   footer #writing{
     font-size: 1.5vw;
     text-align: center;
