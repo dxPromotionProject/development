@@ -9,8 +9,6 @@ if (is_user_logged_in()){
 
 <?php get_template_part('includes/header'); ?>
 
-<?php echo home_url() . "/login"; ?>
-
 <div id="loginTitle">
     <h1>ログイン</h1>
     <h2>member login</h2>

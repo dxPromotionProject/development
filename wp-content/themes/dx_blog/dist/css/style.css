@@ -1809,8 +1809,7 @@ download_Page
 }
 
 .nonMemberRegister .member_register form fieldset #member_agree{
-  display: flex;
-  width: 34%;
+  width: 80%;
   margin: 0 auto;
   text-align: center;
   margin-top: 6vw;
@@ -2182,7 +2181,7 @@ login
 }
 
 #wpmem_login button, #wpmem_login input, #wpmem_reg button, #wpmem_reg input, #wpmem_reg select, #wpmem_reg textarea {
-  font-size: 120% !important;
+  font-size: 1vw !important;
 }
 
 #wpmem_login .my_form #login_fieldset .my_btn_area{
@@ -2211,7 +2210,7 @@ login
 }
 
 #wpmem_login .my_form #login_fieldset .forget_pass{
-  width: 30%;
+  width: 52%;
   margin: auto;
   text-align: center;
   margin-top: 1vw;
@@ -2219,6 +2218,7 @@ login
 
 #wpmem_login .my_form #login_fieldset .forget_pass a{
   text-decoration: none;
+  font-size: 1vw;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -2229,6 +2229,7 @@ register
   text-align: center;
   margin: auto;
   margin-bottom: 3vw;
+  width: 50vw;
 }
 
 #registerTitle h1{
@@ -2237,11 +2238,12 @@ register
   border-color:#D9FF10;
   border-width: 0.7vw;
   width: 20vw;
+  margin: 0 auto;
   margin-bottom: 0;
 }
 
 #registerTitle h2{
-  width: 17vw;
+  width: 45vw;
   margin: auto;
   font-size: 1.2vw;
   color: #004AAD;
@@ -2270,12 +2272,13 @@ register
 }
 
 .member_register form fieldset .member_area h2{
-  width: 20%;
+  width: 30%;
   text-align: right;
+  font-size: 1.3vw;
 }
 
 .member_register form fieldset .register_required_display{
-  width: 15%;
+  width: 20%;
   text-align: center;
 }
 
@@ -2285,7 +2288,7 @@ register
   background-color: #FF0000;
   border-radius: 2vw;
   vertical-align: middle;
-  width: 30%;
+  width: 40%;
   margin: 0 auto;
 }
 
@@ -2297,8 +2300,7 @@ register
 }
 
 .member_register form fieldset #member_agree{
-  display: flex;
-  width: 34%;
+  width: 80%;
   margin: 0 auto;
   text-align: center;
   margin-top: 6vw;
@@ -2312,7 +2314,7 @@ register
 .member_register form fieldset .button_div{
   padding-top: 1.1vw;
   text-align: center;
-  width: 30%;
+  width: 41%;
   margin: auto;
   border: 0.1vw solid #707070;
   border-radius: 5vw;
@@ -2388,6 +2390,7 @@ register_complete
 .member_register_complete .member_register_complete_inner h2{
   margin-left: 10vw;
   margin-bottom: 4vw;
+  font-size: 1.5vw;
 }
 
 .member_register_complete .register_complete_button {
@@ -2442,7 +2445,7 @@ password_reset
 }
 
 #paswordResetTitle h2{
-  width: 20vw;
+  width: 30vw;
   margin: auto;
   font-size: 1vw;
   color: #004AAD;
@@ -2528,7 +2531,7 @@ password_reset
 #wpmem_login #wpmem_pwdreset_form #pass_reset_fieldset .button_div {
   padding-top: 1.1vw;
   text-align: center;
-  width: 30%;
+  width: 40%;
   margin: auto;
   border: 0.1vw solid #707070;
   border-radius: 5vw;
@@ -2540,6 +2543,7 @@ password_reset
 #wpmem_login #wpmem_pwdreset_form #pass_reset_fieldset .button_div .btn_inner_area {
   display:inline-block;
   cursor: pointer;
+  width: 80%;
 }
 
 #wpmem_login #wpmem_pwdreset_form #pass_reset_fieldset .button_div button.buttons {

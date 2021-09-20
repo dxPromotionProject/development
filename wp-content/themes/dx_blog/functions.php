@@ -230,7 +230,6 @@ function my_login_form_filter( $form, $action ) {
 	$loginUrl = home_url('login');
 	$changePassUrl = home_url('change_password');
 	$nowUrl = substr(get_the_permalink(), 0, -1);
-	// if (is_user_logged_in()) {
 	// 下記にユーザーが任意でパスワードを変更できるリンクを設定 
 	if ( $nowUrl === $changePassUrl ) {
 		  return '
