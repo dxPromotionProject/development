@@ -8,7 +8,7 @@
     <div class="linkbox">
         <div class="displayUserName">
             <?php if(is_user_logged_in()): ?>
-            ようこそ　：　<?php global $current_user; get_currentuserinfo(); echo $current_user->user_login; ?>　様<br>
+            ようこそ　：　<?php global $current_user; wp_get_current_user(); echo $current_user->user_login; ?>　様<br>
             <a href="<?php echo home_url('change_password'); ?>">パスワードの変更</a>
             <?php endif; ?>
         </div>
@@ -36,7 +36,7 @@
             </li>
             <li class="nav" id="sign_up">
             <!-- <div class="nav" id="sign_up"> -->
-                <a href="<?php echo home_url('create_account'); ?>">
+                <a href="<?php echo home_url('register'); ?>">
                     新規会員登録
                 </a>
             <!-- </div> -->

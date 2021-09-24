@@ -26,16 +26,16 @@
                         // echo '</div>';
                         // print_r($matches[0][1]);
 
-                        $contents = $post->post_content;
+                        // $contents = $post->post_content;
                         // print_r($content);
                         // apply_filters('the_content',$contents);
 
                         // echo mb_strlen($matches[0][0]);
-                        $article_content =  apply_filters('the_content',$contents);
-                        $count_string = mb_strlen($matches[0][0]);
-                        $start = mb_strpos($article_content, $matches[0][0])+$count_string;
-                        $end = mb_strpos($article_content, $matches[0][1]);
-                        $first_content = mb_substr($article_content, $start, $end-$start);
+                        // $article_content =  apply_filters('the_content',$contents);
+                        // $count_string = mb_strlen($matches[0][0]);
+                        // $start = mb_strpos($article_content, $matches[0][0])+$count_string;
+                        // $end = mb_strpos($article_content, $matches[0][1]);
+                        // $first_content = mb_substr($article_content, $start, $end-$start);
 
                         // echo $first_content;
                     ?>

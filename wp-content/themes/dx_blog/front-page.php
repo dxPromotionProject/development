@@ -2,17 +2,17 @@
 
 <?php get_template_part('includes/header'); ?>
 
-<div id="topTitle">
-    <div id="topSentence">
-        <div id="ballon">
+<div class="topTitle">
+    <div class="topSentence">
+        <div class="ballon">
             <p>DX推進で</p>
         </div>
-        <div id="topBorder">
+        <div class="topBorder">
             <p>経費削減と売上UP</p>
         </div>
         <h2>DX推進において競合他社に先手を打つ為の情報をお届けします</h2>
     </div>
-    <div id="topImage">
+    <div class="topImage">
         <img src="<?php echo get_template_directory_uri(); ?>/dist/img/DX_Top.png">
     </div>
 </div>
@@ -39,9 +39,9 @@
     </div>
 </div>
 
-<div id="recommendArticleTitle">
+<div class="recommendArticleTitle">
     <p>おすすめ記事</p>
-    <p id="recommendArticleTitleSub">RECOMMEND</p>
+    <p class="recommendArticleTitleSub">RECOMMEND</p>
 </div>
 
 <div class="recommendArticleTitleLine blueLine"></div>
@@ -90,4 +90,3 @@
 
 
 <?php get_template_part('includes/footer'); ?>
-
